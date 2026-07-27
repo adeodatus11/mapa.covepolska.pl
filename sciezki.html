@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ścieżki kształcenia - Mapa szkolnictwa sektorowego we Wrocławiu</title>
+    <meta name="description" content="Porównanie typów szkół i kursów w polskim systemie kształcenia zawodowego.">
+    <link rel="icon" href="assets/map-logo.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="pathways">
+    <header class="site-header">
+      <div class="header-brand-row">
+        <a class="brand" href="./" aria-label="Mapa szkolnictwa sektorowego we Wrocławiu">
+          <img src="assets/map-logo.png" alt="Mapa szkolnictwa zawodowego" class="brand-logo">
+        </a>
+        <div class="header-logos" aria-label="Projekt i finansowanie">
+          <a class="logo-slot small" href="https://win4smes.eu/" target="_blank" rel="noopener" aria-label="WIN4SMEs">
+            <img src="assets/win4smes-tight.png" alt="WIN4SMEs">
+          </a>
+          <a class="logo-slot wide" href="https://ec.europa.eu/regional_policy/information-sources/logo-download-center_en" target="_blank" rel="noopener" aria-label="Dofinansowane przez Unię Europejską">
+            <img src="assets/eu-cofunded-pl-tight.png" alt="Dofinansowane przez Unię Europejską">
+          </a>
+        </div>
+      </div>
+      <label class="language-label">
+        <span>Język strony</span>
+        <select id="languageSelect" name="lang" autocomplete="off" aria-label="Język strony">
+          <option value="pl">PL</option>
+          <option value="en">EN</option>
+          <option value="uk">UA</option>
+          <option value="ru">RU</option>
+          <option value="be">BE</option>
+        </select>
+      </label>
+      <details class="menu-dropdown">
+        <summary aria-label="Otwórz menu"><span></span><span></span><span></span></summary>
+        <nav class="top-actions" aria-label="Główne linki">
+          <a href="./">Mapa</a>
+          <a href="./branze.html">Branże</a>
+          <a href="./sciezki.html">Ścieżki</a>
+          <a href="./szkoly.html">Szkoły</a>
+        </nav>
+      </details>
+    </header>
+
+    <main class="info-page">
+      <section class="info-hero">
+        <p class="service-label">Publiczna mapa COVE Polska</p>
+        <h1 id="page-title">Ścieżki kształcenia</h1>
+        <p class="lead" id="page-lead">Porównanie typów szkół i kursów pomaga wybrać drogę dopasowaną do celu: matura, szybkie wejście do zawodu, kontynuacja kwalifikacji albo kurs.</p>
+        <p id="page-intro">Nazwy typów ścieżek odnoszą się do polskiego systemu edukacji. Przed decyzją zawsze warto sprawdzić aktualną ofertę szkoły i wymagania rekrutacyjne.</p>
+      </section>
+      <section class="info-list" id="page-content" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-logos" aria-label="Logotypy partnerów i finansowania">
+        <a class="logo-slot footer-logo" href="https://win4smes.eu/" target="_blank" rel="noopener" aria-label="WIN4SMEs">
+          <img src="assets/win4smes-tight.png" alt="WIN4SMEs">
+        </a>
+        <a class="logo-slot footer-logo" href="https://covepolska.pl/" target="_blank" rel="noopener" aria-label="COVE Polska">
+          <img src="assets/cove-polska-tight.png" alt="COVE Polska">
+        </a>
+        <a class="logo-slot footer-logo" href="https://ec.europa.eu/regional_policy/information-sources/logo-download-center_en" target="_blank" rel="noopener" aria-label="Dofinansowane przez Unię Europejską">
+          <img src="assets/eu-cofunded-pl-tight.png" alt="Dofinansowane przez Unię Europejską">
+        </a>
+        <a class="logo-slot footer-logo" href="https://www.wroclaw.pl/" target="_blank" rel="noopener" aria-label="Wrocław Miasto Spotkań">
+          <img src="assets/wroclaw-miasto-spotkan-tight.png" alt="Wrocław Miasto Spotkań">
+        </a>
+      </div>
+    </footer>
+
+    <script src="pages.js" type="module"></script>
+  </body>
+</html>

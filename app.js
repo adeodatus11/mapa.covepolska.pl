@@ -444,7 +444,7 @@ function renderQuickProfiles(programs) {
       state.showAll = false;
       els.q.value = profileLabel;
       render();
-      document.querySelector("#wyniki").scrollIntoView({ behavior: "smooth", block: "start" });
+      document.querySelector("#branze")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
     els.quickProfiles.append(button);
   });
@@ -475,7 +475,7 @@ function selectProfile(profile, branchName) {
   els.school.value = "";
   els.educationType.value = "";
   render();
-  document.querySelector("#wyniki").scrollIntoView({ behavior: "smooth", block: "start" });
+  document.querySelector("#branze")?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function renderBranchMap(branches) {
@@ -570,7 +570,6 @@ function renderBranchMap(branches) {
                 `)
                 .join("")}
             </div>
-            <button type="button" data-profile="${escapeAttribute(profile.name)}" data-branch="${escapeAttribute(selected.name)}">${escapeHtml(t("showInResults"))}</button>
           </article>
         `)
         .join("")}
@@ -591,17 +590,10 @@ function renderBranchMap(branches) {
       render();
     });
   });
-
-  els.branchDetail.querySelectorAll("[data-profile]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const branch = branches.find((item) => item.name === button.dataset.branch);
-      const profile = branch?.profiles.find((item) => item.name === button.dataset.profile);
-      if (profile) selectProfile(profile, button.dataset.branch);
-    });
-  });
 }
 
 function renderAreas(programs) {
+  if (!els.areaList) return;
   const schoolsInResults = unique(programs.map((program) => program.school_name));
   const visibleSchools = state.data.institutions.filter((school) => schoolsInResults.includes(school.name));
   const areas = countBy(visibleSchools, (school) => school.public_city_area || school.city || "Wrocław");
@@ -628,6 +620,7 @@ function renderAreas(programs) {
 }
 
 function renderCards(programs) {
+  if (!els.cards || !els.empty) return;
   els.cards.innerHTML = "";
   els.empty.hidden = programs.length > 0;
 
@@ -651,6 +644,7 @@ function renderCards(programs) {
 }
 
 function renderSchools(programs) {
+  if (!els.schools) return;
   const schoolsInResults = unique(programs.map((program) => program.school_name));
   const visibleSchools = state.data.institutions.filter((school) => schoolsInResults.includes(school.name));
   els.schools.innerHTML = "";
@@ -674,6 +668,7 @@ function renderSchools(programs) {
 }
 
 function renderSources(programs) {
+  if (!els.sources) return;
   const sources = new Map();
   programs.forEach((program) => {
     const key = `${program.source_label || t("source")}|${program.source_url || ""}`;
@@ -709,7 +704,9 @@ function render() {
   renderSchools(programs);
   renderSources(programs);
 
-  els.summary.textContent = `${countText("entry", programs.length)}, ${countText("school", schools.length)}, ${countText("filter", activeFilters)}.`;
+  if (els.summary) {
+    els.summary.textContent = `${countText("entry", programs.length)}, ${countText("school", schools.length)}, ${countText("filter", activeFilters)}.`;
+  }
 }
 
 function escapeHtml(value) {
@@ -762,10 +759,10 @@ function applyStaticTranslations() {
     if (image) image.alt = t("euFunded");
   });
 
-  setText('.top-actions a[href="#sciezki"]', "navPaths");
-  setText('.top-actions a[href="#branze"]', "navBranches");
-  setText('.top-actions a[href="#wyniki"]', "navResults");
-  setText('.top-actions a[href="#szkoly"]', "navData");
+  setText('.top-actions a[href="./"]', "navMap");
+  setText('.top-actions a[href="./branze.html"]', "navBranches");
+  setText('.top-actions a[href="./sciezki.html"]', "navPaths");
+  setText('.top-actions a[href="./szkoly.html"]', "navSchools");
   setText(".language-label span", "languageLabel");
   setAttr("#languageSelect", "aria-label", "languageLabel");
   setText(".service-label", "serviceLabel");
@@ -821,21 +818,7 @@ function applyStaticTranslations() {
   setText("#clearFilters", "clear");
   setText(".branch-browser .panel-title h3", "branches");
   setText("#profile-title", "profilesInBranch");
-  setText("#results-title", "results");
-  setText("#resultsSummary", "loading");
-  setText("#emptyState h3", "noResults");
-  setText("#emptyState p", "noResultsText");
   setText("#quick-title", "quickChoice");
-  setText(".support-drawers details:nth-child(1) summary span", "schoolsAreas");
-  setText(".support-drawers details:nth-child(1) summary small", "expand");
-  setText("#areas-title", "cityAreas");
-  setText(".map-panel .section-heading p", "cityAreasText");
-  setText("#schools-title", "schoolsTitle");
-  setText(".school-section .section-heading p", "schoolsText");
-  setText("#zrodla summary span", "sourcesVerification");
-  setText("#zrodla summary small", "expand");
-  setText("#sources-title", "sources");
-  setText(".sources-section .section-heading p", "sourcesText");
 }
 
 function populateFilterOptions() {

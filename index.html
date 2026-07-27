@@ -40,10 +40,10 @@
           <span></span>
         </summary>
         <nav class="top-actions" aria-label="Główne linki">
-          <a href="#sciezki">Ścieżki</a>
-          <a href="#branze">Branże</a>
-          <a href="#wyniki">Wyniki</a>
-          <a href="#szkoly">Dane</a>
+          <a href="./">Mapa</a>
+          <a href="./branze.html">Branże</a>
+          <a href="./sciezki.html">Ścieżki</a>
+          <a href="./szkoly.html">Szkoły</a>
         </nav>
       </details>
     </header>
@@ -195,65 +195,11 @@
             </div>
             <div class="branch-detail" id="branchDetail" aria-live="polite"></div>
           </section>
-
-          <section class="results-panel" id="wyniki" aria-labelledby="results-title">
-            <div class="results-header">
-              <div>
-                <h3 id="results-title">Wyniki</h3>
-                <p id="resultsSummary">Ładowanie danych...</p>
-              </div>
-            </div>
-            <div class="empty-state" id="emptyState" hidden>
-              <h3>Brak wyników</h3>
-              <p>Spróbuj krótszego hasła albo wyczyść część filtrów.</p>
-            </div>
-            <div class="cards" id="programCards"></div>
-          </section>
         </div>
 
         <div class="quick-strip" aria-labelledby="quick-title">
           <h3 id="quick-title">Szybki wybór</h3>
           <div class="chips" id="quickProfiles"></div>
-        </div>
-
-        <div class="support-drawers" id="szkoly">
-          <details class="data-drawer">
-            <summary>
-              <span>Szkoły i obszary w aktualnym widoku</span>
-              <small>rozwiń</small>
-            </summary>
-            <div class="drawer-grid">
-              <aside class="map-panel" aria-labelledby="areas-title">
-                <div class="section-heading compact">
-                  <h3 id="areas-title">Obszary miasta</h3>
-                  <p>Widok orientacyjny, oparty na publicznych profilach szkół.</p>
-                </div>
-                <div class="area-list" id="areaList"></div>
-              </aside>
-
-              <section class="school-section" aria-labelledby="schools-title">
-                <div class="section-heading compact">
-                  <h3 id="schools-title">Szkoły</h3>
-                  <p>Każda karta pokazuje przykładowe profile oraz link do strony szkoły.</p>
-                </div>
-                <div class="school-grid" id="schoolGrid"></div>
-              </section>
-            </div>
-          </details>
-
-          <details class="data-drawer" id="zrodla">
-            <summary>
-              <span>Źródła i weryfikacja danych</span>
-              <small>rozwiń</small>
-            </summary>
-            <div class="sources-section" aria-labelledby="sources-title">
-              <div class="section-heading compact">
-                <h3 id="sources-title">Źródła</h3>
-                <p>Każda pozycja oferty ma źródło i datę weryfikacji. Dane należy okresowo sprawdzać przed rekrutacją.</p>
-              </div>
-              <div class="source-grid" id="sourceGrid"></div>
-            </div>
-          </details>
         </div>
       </section>
     </main>
