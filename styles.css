@@ -92,6 +92,37 @@ select {
   white-space: nowrap;
 }
 
+.language-label {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  color: var(--navy);
+}
+
+.language-label span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.language-label select {
+  width: 72px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  padding: 0 8px;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  text-align: center;
+  text-align-last: center;
+}
+
 .logo-slot {
   display: flex;
   min-height: 0;
@@ -1160,6 +1191,12 @@ h1 {
 
   .logo-slot.wide {
     width: clamp(92px, 27vw, 132px);
+  }
+
+  .language-label select {
+    width: 58px;
+    padding: 0 4px;
+    font-size: 12px;
   }
 
   .menu-dropdown summary {
