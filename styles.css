@@ -64,15 +64,61 @@ select {
   backdrop-filter: blur(12px);
 }
 
+.header-brand-row {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  align-items: center;
+  gap: clamp(16px, 3vw, 34px);
+}
+
 .brand {
   display: block;
-  max-width: min(320px, 56vw);
+  flex: 0 1 320px;
+  max-width: min(320px, 42vw);
 }
 
 .brand-logo {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.header-logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-slot {
+  display: flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--white);
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.logo-slot:hover,
+.logo-slot:focus-visible {
+  background: var(--sky);
+}
+
+.logo-slot img {
+  width: 100%;
+  max-height: 36px;
+  object-fit: contain;
+}
+
+.logo-slot.small {
+  width: 106px;
+}
+
+.logo-slot.wide {
+  width: 178px;
 }
 
 .top-actions {
@@ -938,17 +984,33 @@ h1 {
   margin: 0 auto;
 }
 
+.footer-logos .footer-logo {
+  height: 82px;
+  padding: 12px 16px;
+}
+
 .footer-logos img {
   width: 100%;
-  height: 72px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--white);
+  max-height: 58px;
   object-fit: contain;
-  padding: 12px;
 }
 
 @media (max-width: 1100px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header-brand-row,
+  .top-actions {
+    width: 100%;
+  }
+
+  .header-logos {
+    margin-left: auto;
+  }
+
   .hero,
   .compact-hero,
   .explorer-grid,
@@ -998,12 +1060,40 @@ h1 {
 
 @media (max-width: 720px) {
   .site-header {
-    align-items: flex-start;
-    flex-direction: column;
+    padding: 10px 12px;
+  }
+
+  .header-brand-row {
+    flex-wrap: wrap;
+    gap: 8px 10px;
   }
 
   .brand {
-    max-width: min(100%, 320px);
+    flex-basis: auto;
+    max-width: min(100%, 220px);
+  }
+
+  .header-logos {
+    width: 100%;
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  .logo-slot {
+    min-height: 46px;
+    padding: 6px 8px;
+  }
+
+  .logo-slot img {
+    max-height: 30px;
+  }
+
+  .logo-slot.small {
+    width: min(118px, 33vw);
+  }
+
+  .logo-slot.wide {
+    width: min(174px, 52vw);
   }
 
   .top-actions {
@@ -1036,9 +1126,13 @@ h1 {
   .cards,
   .profile-list,
   .school-grid,
-  .source-grid,
-  .footer-logos {
+  .source-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-logos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
 
   .hero-panel {
@@ -1156,8 +1250,13 @@ h1 {
     padding: 10px;
   }
 
+  .footer-logos .footer-logo {
+    height: 76px;
+    padding: 10px;
+  }
+
   .footer-logos img {
-    height: 64px;
+    max-height: 50px;
   }
 }
 
