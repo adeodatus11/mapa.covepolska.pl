@@ -23,6 +23,7 @@ const state = {
   branch: "",
   school: "",
   openBranch: "",
+  previewBranchActive: false,
   showAll: false
 };
 
@@ -296,6 +297,7 @@ function loadFromUrl() {
   state.educationType = params.get("educationType") || "";
   state.branch = params.get("branch") || "";
   state.school = params.get("school") || "";
+  state.previewBranchActive = false;
   state.showAll = false;
 
   if (els.language) els.language.value = state.lang;
@@ -332,7 +334,8 @@ function effectiveBranchFilter({ includeDefaultBranch = true } = {}) {
   const hasExplicitFilter = state.q || state.educationType || state.branch || state.school;
   if (state.showAll) return "";
   if (state.branch) return state.branch;
-  return includeDefaultBranch && !hasExplicitFilter ? state.openBranch : "";
+  if (!includeDefaultBranch) return "";
+  return state.previewBranchActive || !hasExplicitFilter ? state.openBranch : "";
 }
 
 function programsForFilters({ includeDefaultBranch = true, includeBranch = true } = {}) {
@@ -434,8 +437,9 @@ function renderQuickProfiles(programs) {
       const match = findProfileBranch(profile.name);
       if (match) {
         state.openBranch = match.branch.name;
-        state.branch = match.branch.name;
-        els.branch.value = match.branch.name;
+        state.previewBranchActive = true;
+        state.branch = "";
+        els.branch.value = "";
       }
       state.showAll = false;
       els.q.value = profileLabel;
@@ -578,10 +582,11 @@ function renderBranchMap(branches) {
       const item = button.closest("[data-branch-name]");
       const branchName = item?.dataset.branchName || "";
       state.openBranch = branchName;
-      state.branch = branchName;
+      state.branch = "";
       state.q = "";
+      state.previewBranchActive = true;
       state.showAll = false;
-      els.branch.value = branchName;
+      els.branch.value = "";
       els.q.value = "";
       render();
     });
@@ -865,6 +870,7 @@ function applyFiltersFromForm() {
   state.educationType = els.educationType.value;
   state.branch = els.branch.value;
   state.school = els.school.value;
+  state.previewBranchActive = false;
   state.showAll = !state.q && !state.educationType && !state.branch && !state.school;
   if (state.branch) {
     state.openBranch = state.branch;
@@ -890,6 +896,7 @@ els.clear.addEventListener("click", () => {
   state.branch = "";
   state.school = "";
   state.openBranch = state.data.branch_map[0]?.name || "";
+  state.previewBranchActive = false;
   state.showAll = false;
   els.q.value = "";
   els.educationType.value = "";
