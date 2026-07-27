@@ -415,12 +415,14 @@ h1 {
 
 .pathway-card span {
   justify-self: start;
+  max-width: 100%;
   border-radius: 999px;
   background: var(--white);
   padding: 5px 8px;
   color: var(--navy);
   font-size: 12px;
   font-weight: 800;
+  line-height: 1.25;
 }
 
 .pathway-card h3 {
@@ -936,12 +938,14 @@ h1 {
 .tag {
   display: inline-flex;
   align-items: center;
+  max-width: 100%;
   border-radius: 7px;
   background: var(--white);
   padding: 5px 8px;
   color: var(--navy);
   font-size: 12px;
   font-weight: 800;
+  line-height: 1.25;
 }
 
 .tag.amber {
