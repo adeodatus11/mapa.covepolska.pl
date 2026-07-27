@@ -4,6 +4,7 @@ import {
   LANGUAGES,
   PROFILE_LABELS,
   SCHOOL_SUMMARIES_EN,
+  SCHOOL_SUMMARIES_LOCALIZED,
   UI
 } from "./i18n.js";
 
@@ -120,6 +121,8 @@ function displayProfileDescription(profile, branchName) {
 
 function displaySchoolSummary(school) {
   if (state.lang === "pl") return school.public_summary || t("defaultSchoolProfile");
+  const localizedSummary = SCHOOL_SUMMARIES_LOCALIZED[state.lang]?.[school.public_summary];
+  if (localizedSummary) return localizedSummary;
   if (state.lang === "en") return SCHOOL_SUMMARIES_EN[school.public_summary] || school.public_summary || t("defaultSchoolProfile");
   const sectors = translateCsv(school.public_tags || school.sectors || school.occupations || "");
   const templates = {

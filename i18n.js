@@ -1011,5 +1011,18 @@ export const SCHOOL_SUMMARIES_EN = {
   "Technikum w obszarach weterynarii, optyki okularowej i ortopedii.": "Technical secondary school in veterinary support, ophthalmic optics and orthopaedics.",
   "Oferta techniczna i branżowa dla mechaniki, elektryki, mechatroniki, chłodnictwa i odnawialnych źródeł energii.": "Technical and sectoral offer for mechanics, electrical engineering, mechatronics, refrigeration and renewable energy.",
   "Oferta technikum i szkoły branżowej w handlu, informatyce, modzie, reklamie, krawiectwie i sprzedaży.": "Technical secondary and sectoral school offer in trade, IT, fashion, advertising, tailoring and sales.",
-  "Oferta techniczna i branżowa dla handlu, usług fryzjerskich, gastronomii, elektryki, motoryzacji, budownictwa i rzemiosła.": "Technical and sectoral offer for trade, hairdressing services, gastronomy, electrical engineering, automotive, construction and crafts."
+  "Oferta techniczna i branżowa dla handlu, usług fryzjerskich, gastronomii, elektryki, motoryzacji, budownictwa i rzemiosła. Jedyna szkoła we Wrocławiu kształcąca w modelu dualnym.": "Technical and sectoral offer for trade, hairdressing services, gastronomy, electrical engineering, automotive, construction and crafts. The only school in Wroclaw providing education in the dual model."
+};
+
+export const SCHOOL_SUMMARIES_LOCALIZED = {
+  en: SCHOOL_SUMMARIES_EN,
+  uk: {
+    "Oferta techniczna i branżowa dla handlu, usług fryzjerskich, gastronomii, elektryki, motoryzacji, budownictwa i rzemiosła. Jedyna szkoła we Wrocławiu kształcąca w modelu dualnym.": "Технічна і галузева пропозиція для торгівлі, перукарських послуг, гастрономії, електрики, автомобільної сфери, будівництва і ремесел. Єдина школа у Вроцлаві, що навчає за дуальною моделлю."
+  },
+  ru: {
+    "Oferta techniczna i branżowa dla handlu, usług fryzjerskich, gastronomii, elektryki, motoryzacji, budownictwa i rzemiosła. Jedyna szkoła we Wrocławiu kształcąca w modelu dualnym.": "Техническое и отраслевое предложение для торговли, парикмахерских услуг, гастрономии, электрики, автомобильной сферы, строительства и ремесел. Единственная школа во Вроцлаве, обучающая по дуальной модели."
+  },
+  be: {
+    "Oferta techniczna i branżowa dla handlu, usług fryzjerskich, gastronomii, elektryki, motoryzacji, budownictwa i rzemiosła. Jedyna szkoła we Wrocławiu kształcąca w modelu dualnym.": "Тэхнічная і галіновая прапанова для гандлю, цырульніцкіх паслуг, гастраноміі, электрыкі, аўтамабільнай сферы, будаўніцтва і рамёстваў. Адзіная школа ва Уроцлаве, якая навучае па дуальнай мадэлі."
+  }
 };

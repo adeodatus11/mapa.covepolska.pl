@@ -4,6 +4,7 @@ import {
   LANGUAGES,
   PROFILE_LABELS,
   SCHOOL_SUMMARIES_EN,
+  SCHOOL_SUMMARIES_LOCALIZED,
   UI
 } from "./i18n.js";
 
@@ -222,6 +223,8 @@ function profileDescription(profile, branch) {
 
 function schoolSummary(school) {
   if (state.lang === "pl") return school.public_summary || c("noData");
+  const localizedSummary = SCHOOL_SUMMARIES_LOCALIZED[state.lang]?.[school.public_summary];
+  if (localizedSummary) return localizedSummary;
   if (state.lang === "en") return SCHOOL_SUMMARIES_EN[school.public_summary] || school.public_summary || c("noData");
   const sectors = String(school.public_tags || school.sectors || "")
     .split(",")
