@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mapa szkolnictwa sektorowego we Wrocławiu</title>
+    <meta name="description" content="Publiczna mapa profili, szkół i ścieżek sektorowych we Wrocławiu.">
+    <link rel="icon" href="assets/map-logo.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Mapa szkolnictwa sektorowego we Wrocławiu">
+        <img src="assets/map-logo.png" alt="Mapa szkolnictwa zawodowego" class="brand-logo">
+      </a>
+      <nav class="top-actions" aria-label="Główne linki">
+        <a href="#sciezki">Ścieżki</a>
+        <a href="#branze">Branże</a>
+        <a href="#wyniki">Wyniki</a>
+        <a href="#szkoly">Dane</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero compact-hero">
+        <div class="hero-copy">
+          <p class="service-label">Publiczna mapa COVE Polska</p>
+          <h1>Znajdź profil i szkołę bez błądzenia po liście</h1>
+          <p class="lead">
+            Wybierz branżę, zobacz profile i od razu sprawdź szkoły lub BCU we Wrocławiu.
+          </p>
+        </div>
+        <div class="hero-panel" aria-label="Podsumowanie mapy">
+          <div class="stat">
+            <strong id="stat-schools">0</strong>
+            <span>szkół</span>
+          </div>
+          <div class="stat">
+            <strong id="stat-programs">0</strong>
+            <span>pozycji oferty</span>
+          </div>
+          <div class="stat">
+            <strong id="stat-profiles">0</strong>
+            <span>profili</span>
+          </div>
+          <div class="stat">
+            <strong id="stat-branches">0</strong>
+            <span>branż</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="path-guide" id="sciezki" aria-labelledby="path-title">
+        <div class="path-guide-intro">
+          <div>
+            <h2 id="path-title">Nie wiesz, którą ścieżkę wybrać?</h2>
+            <p>
+              Najpierw zdecyduj, czy ważniejsza jest szkoła z maturą, szybkie wejście do zawodu,
+              kontynuacja po BS I, czy kurs konkretnej kwalifikacji.
+            </p>
+          </div>
+          <a class="path-cta" href="?educationType=bs_i&school=Zesp%C3%B3%C5%82%20Szk%C3%B3%C5%82%20Zawodowych%20nr%205%20we%20Wroc%C5%82awiu#branze">
+            Chcę nauki z pracą
+          </a>
+        </div>
+
+        <div class="dual-note">
+          <strong>Jeśli zależy Ci na nauce połączonej z pracą w realnym zakładzie pracy:</strong>
+          <p>
+            sprawdź Branżową Szkołę I stopnia nr 5 w Zespole Szkół Zawodowych nr 5 we Wrocławiu.
+            To model dualny: uczeń uczy się w szkole i zdobywa praktyczne umiejętności u pracodawcy,
+            będąc zatrudnionym jako młodociany pracownik.
+          </p>
+        </div>
+
+        <div class="pathway-grid" aria-label="Porównanie typów ścieżek">
+          <article class="pathway-card">
+            <span>Technikum</span>
+            <h3>Zawód technika i droga do matury</h3>
+            <p>Pięcioletnia szkoła po podstawówce. Łączy przedmioty ogólne z kształceniem zawodowym, praktykami i egzaminem zawodowym.</p>
+            <a href="?educationType=technikum#branze">Pokaż technika</a>
+          </article>
+          <article class="pathway-card highlight">
+            <span>BS I stopnia</span>
+            <h3>Szybsze wejście do zawodu</h3>
+            <p>Trzyletnia szkoła po podstawówce. W ZSZ nr 5 szczególnie ważny jest model dualny: szkoła plus praca u pracodawcy jako młodociany pracownik.</p>
+            <a href="?educationType=bs_i#branze">Pokaż BS I</a>
+          </article>
+          <article class="pathway-card">
+            <span>BS II stopnia</span>
+            <h3>Kontynuacja po BS I</h3>
+            <p>Dwuletnia ścieżka dla absolwentów BS I w zawodach z kontynuacją kwalifikacji. Może prowadzić do wykształcenia średniego branżowego i matury.</p>
+            <a href="?educationType=bs_ii#branze">Pokaż BS II</a>
+          </article>
+          <article class="pathway-card">
+            <span>KKZ</span>
+            <h3>Kurs konkretnej kwalifikacji</h3>
+            <p>Kwalifikacyjny kurs zawodowy przygotowuje do jednej kwalifikacji i egzaminu zawodowego. Część praktyczna wymaga realizacji bezpośredniej.</p>
+            <a href="?educationType=kkz#branze">Pokaż KKZ</a>
+          </article>
+          <article class="pathway-card">
+            <span>Kurs lub wsparcie</span>
+            <h3>Szkolenia, BCU i rozwój kompetencji</h3>
+            <p>Dobre do doposażenia umiejętności, specjalizacji lub poznania branży. Nie każdy kurs oznacza pełną kwalifikację szkolną.</p>
+            <a href="?educationType=kurs#branze">Pokaż kursy</a>
+          </article>
+        </div>
+
+        <p class="path-disclaimer">
+          Informacja ma charakter orientacyjny. Przed decyzją sprawdź aktualną ofertę szkoły i źródła MEN:
+          <a href="https://www.gov.pl/web/edukacja/przygotowanie-zawodowe-mlodocianych-pracownikow-w-formie-nauki-zawodu" target="_blank" rel="noreferrer">młodociani pracownicy</a>,
+          <a href="https://www.gov.pl/web/edukacja/praktyczna-nauka-zawodu" target="_blank" rel="noreferrer">praktyczna nauka zawodu</a>,
+          <a href="https://www.gov.pl/web/edukacja/ksztalcenie-w-formach-pozaszkolnych" target="_blank" rel="noreferrer">formy pozaszkolne</a>.
+        </p>
+      </section>
+
+      <section class="explorer-shell" id="branze" aria-labelledby="branch-title">
+        <div class="section-heading explorer-heading">
+          <div>
+            <h2 id="branch-title">Eksplorator oferty</h2>
+            <p id="currentPath">Wybierz branżę po lewej albo użyj wyszukiwarki.</p>
+          </div>
+        </div>
+
+        <form class="filters" id="filters">
+          <label>
+            <span>Szukaj profilu albo szkoły</span>
+            <input id="q" name="q" type="search" autocomplete="off" placeholder="np. fryzjer, logistyk, mechatronik">
+          </label>
+          <label>
+            <span>Typ ścieżki</span>
+            <select id="educationType" name="educationType">
+              <option value="">Wszystkie</option>
+              <option value="technikum">Technikum</option>
+              <option value="bs_i">BS I stopnia</option>
+              <option value="bs_ii">BS II stopnia</option>
+              <option value="kkz">KKZ</option>
+              <option value="kurs">Kurs lub wsparcie</option>
+            </select>
+          </label>
+          <label>
+            <span>Branża</span>
+            <select id="branch" name="branch"></select>
+          </label>
+          <label>
+            <span>Szkoła</span>
+            <select id="school" name="school"></select>
+          </label>
+          <div class="filter-actions">
+            <button class="primary-button" type="submit">Pokaż wyniki</button>
+            <button class="secondary-button" type="button" id="clearFilters">Wyczyść</button>
+          </div>
+        </form>
+
+        <div class="explorer-grid">
+          <aside class="branch-browser" aria-label="Lista branż">
+            <div class="panel-title">
+              <h3>Branże</h3>
+              <span id="branchCount">0</span>
+            </div>
+            <div class="branch-accordion" id="branchAccordion" aria-live="polite"></div>
+          </aside>
+
+          <section class="profile-browser" aria-labelledby="profile-title">
+            <div class="panel-title">
+              <h3 id="profile-title">Profile w branży</h3>
+              <span id="profileCount">0</span>
+            </div>
+            <div class="branch-detail" id="branchDetail" aria-live="polite"></div>
+          </section>
+
+          <section class="results-panel" id="wyniki" aria-labelledby="results-title">
+            <div class="results-header">
+              <div>
+                <h3 id="results-title">Wyniki</h3>
+                <p id="resultsSummary">Ładowanie danych...</p>
+              </div>
+            </div>
+            <div class="empty-state" id="emptyState" hidden>
+              <h3>Brak wyników</h3>
+              <p>Spróbuj krótszego hasła albo wyczyść część filtrów.</p>
+            </div>
+            <div class="cards" id="programCards"></div>
+          </section>
+        </div>
+
+        <div class="quick-strip" aria-labelledby="quick-title">
+          <h3 id="quick-title">Szybki wybór</h3>
+          <div class="chips" id="quickProfiles"></div>
+        </div>
+
+        <div class="support-drawers" id="szkoly">
+          <details class="data-drawer">
+            <summary>
+              <span>Szkoły i obszary w aktualnym widoku</span>
+              <small>rozwiń</small>
+            </summary>
+            <div class="drawer-grid">
+              <aside class="map-panel" aria-labelledby="areas-title">
+                <div class="section-heading compact">
+                  <h3 id="areas-title">Obszary miasta</h3>
+                  <p>Widok orientacyjny, oparty na publicznych profilach szkół.</p>
+                </div>
+                <div class="area-list" id="areaList"></div>
+              </aside>
+
+              <section class="school-section" aria-labelledby="schools-title">
+                <div class="section-heading compact">
+                  <h3 id="schools-title">Szkoły</h3>
+                  <p>Każda karta pokazuje przykładowe profile oraz link do strony szkoły.</p>
+                </div>
+                <div class="school-grid" id="schoolGrid"></div>
+              </section>
+            </div>
+          </details>
+
+          <details class="data-drawer" id="zrodla">
+            <summary>
+              <span>Źródła i weryfikacja danych</span>
+              <small>rozwiń</small>
+            </summary>
+            <div class="sources-section" aria-labelledby="sources-title">
+              <div class="section-heading compact">
+                <h3 id="sources-title">Źródła</h3>
+                <p>Każda pozycja oferty ma źródło i datę weryfikacji. Dane należy okresowo sprawdzać przed rekrutacją.</p>
+              </div>
+              <div class="source-grid" id="sourceGrid"></div>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-logos" aria-label="Logotypy partnerów i finansowania">
+        <img src="assets/win4smes.png" alt="WIN4SMEs">
+        <img src="assets/cove-polska.png" alt="COVE Polska">
+        <img src="assets/eu-cofunded-pl.png" alt="Dofinansowane przez Unię Europejską">
+        <img src="assets/wroclaw-miasto-spotkan.png" alt="Wrocław Miasto Spotkań">
+      </div>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

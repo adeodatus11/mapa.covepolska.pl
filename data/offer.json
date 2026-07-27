@@ -1,0 +1,3456 @@
+{
+  "generated_at": "2026-07-27T07:56:02.098Z",
+  "source_note": "Static export from vet-hub/directus/src/wroclaw-vet-data.mjs",
+  "institutions": [
+    {
+      "name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+      "type": "technikum / branżowa szkoła I stopnia",
+      "city": "Wrocław",
+      "address": "ul. gen. Józefa Haukego-Bosaka 21",
+      "website": "https://www.zstie.edu.pl",
+      "sectors": "elektronika, informatyka, teleinformatyka, robotyka",
+      "occupations": "technik elektronik, technik informatyk, technik teleinformatyk, technik robotyk, elektronik",
+      "public_summary": "Kształcenie w zawodach cyfrowych i elektronicznych, w tym teleinformatyka, robotyka i elektronika.",
+      "public_contact_email": "sekretariat.zstie@wroclawskaedukacja.pl",
+      "public_phone": "71 798 69 33",
+      "public_city_area": "Krzyki",
+      "public_tags": "IT, elektronika, teleinformatyka, robotyka"
+    },
+    {
+      "name": "Zespół Szkół nr 2 we Wrocławiu",
+      "type": "technikum / branżowa szkoła I stopnia",
+      "city": "Wrocław",
+      "address": "ul. Borowska 105",
+      "website": "https://zs2.wroclaw.pl/",
+      "sectors": "mechanika, mechatronika, motoryzacja",
+      "occupations": "technik mechanik, technik mechatronik, technik pojazdów samochodowych oraz zawody branżowe w motoryzacji",
+      "public_summary": "Oferta dla uczniów zainteresowanych mechaniką, mechatroniką i branżą samochodową.",
+      "public_contact_email": "sekretariat.zs02@wroclawskaedukacja.pl",
+      "public_phone": "71 798 68 95",
+      "public_city_area": "Krzyki",
+      "public_tags": "mechanika, mechatronika, motoryzacja"
+    },
+    {
+      "name": "Zespół Szkół Budowlanych we Wrocławiu",
+      "type": "technikum / branżowa szkoła I stopnia",
+      "city": "Wrocław",
+      "address": "ul. Grabiszyńska 236",
+      "website": "https://www.zsb-wroc.edupage.org",
+      "sectors": "budownictwo, geodezja",
+      "occupations": "technik budownictwa, technik geodeta, monter zabudowy i robót wykończeniowych w budownictwie",
+      "public_summary": "Kształcenie techniczne i branżowe dla sektora budownictwa oraz geodezji.",
+      "public_contact_email": "sekretariat.zsb@wroclawskaedukacja.pl",
+      "public_phone": "71 798 69 07",
+      "public_city_area": "Fabryczna",
+      "public_tags": "budownictwo, geodezja"
+    },
+    {
+      "name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+      "type": "technikum / branżowa szkoła I stopnia",
+      "city": "Wrocław",
+      "address": "ul. Kiełczowska 43",
+      "website": "https://www.lzn.pl",
+      "sectors": "lotnictwo, logistyka, automatyka, mechanika, mechatronika",
+      "occupations": "technicy: automatyk, logistyk, mechanik, mechanik lotniczy, mechatronik, służby lotniskowe oraz zawody branżowe",
+      "public_summary": "Oferta techniczna związana z lotnictwem, logistyką, automatyką, mechaniką i mechatroniką.",
+      "public_contact_email": "szkola@lzn.pl",
+      "public_phone": "71 798 67 41",
+      "public_city_area": "Psie Pole",
+      "public_tags": "lotnictwo, logistyka, automatyka, mechatronika"
+    },
+    {
+      "name": "Zespół Szkół Ekonomiczno-Administracyjnych we Wrocławiu",
+      "type": "technikum",
+      "city": "Wrocław",
+      "address": "ul. Stanisława Worcella 3",
+      "website": "https://www.zsea.wroclaw.szkolnastrona.pl",
+      "sectors": "ekonomia, rachunkowość, reklama",
+      "occupations": "technik ekonomista, technik rachunkowości, technik reklamy",
+      "public_summary": "Kształcenie w ekonomii, rachunkowości i reklamie.",
+      "public_contact_email": "zsea@zse.wroc.pl",
+      "public_phone": "71 798 69 09",
+      "public_city_area": "Krzyki",
+      "public_tags": "ekonomia, rachunkowość, reklama"
+    },
+    {
+      "name": "Centrum Placówek Kształcenia Zawodowego we Wrocławiu",
+      "type": "centrum kształcenia sektorowego",
+      "city": "Wrocław",
+      "address": "ul. Strzegomska 49a",
+      "website": "https://cpkz.edu.pl/",
+      "sectors": "kształcenie praktyczne, projekty sektorowe, staże",
+      "occupations": "zajęcia praktyczne, projekty stażowe, wsparcie pracowni",
+      "public_summary": "Wrocławskie centrum wsparcia praktycznej nauki zawodu, projektów stażowych i rozwoju pracowni.",
+      "public_contact_email": "mramut@ckz.edu.pl",
+      "public_phone": "71 798 67 00",
+      "public_city_area": "Fabryczna",
+      "public_tags": "praktyczna nauka zawodu, staże, projekty"
+    },
+    {
+      "name": "BCU w dziedzinie automatyki przemysłowej we Wrocławiu",
+      "type": "branżowe centrum umiejętności",
+      "city": "Wrocław",
+      "address": "ul. Kiełczowska 43",
+      "website": "https://bcu-automatyka.pl/",
+      "sectors": "automatyka przemysłowa, przemysł, sterowanie",
+      "occupations": "kursy i szkolenia BCU w dziedzinie automatyki przemysłowej",
+      "public_summary": "Kursy, szkolenia i wsparcie kompetencji w automatyce przemysłowej.",
+      "public_contact_email": "",
+      "public_phone": "+48 509 713 845",
+      "public_city_area": "Psie Pole",
+      "public_tags": "BCU, automatyka przemysłowa, kursy, szkolenia"
+    },
+    {
+      "name": "BCU w dziedzinie elektromobilności we Wrocławiu",
+      "type": "branżowe centrum umiejętności",
+      "city": "Wrocław",
+      "address": "ul. Borowska 105",
+      "website": "https://bcu2.wroclaw.pl/bcu/home.nsf/pl/index?open",
+      "sectors": "elektromobilność, motoryzacja, nowe napędy",
+      "occupations": "kursy i szkolenia BCU w dziedzinie elektromobilności",
+      "public_summary": "Wsparcie kompetencji związanych z elektromobilnością i nowoczesną motoryzacją.",
+      "public_contact_email": "",
+      "public_phone": "",
+      "public_city_area": "Krzyki",
+      "public_tags": "BCU, elektromobilność, motoryzacja, kursy"
+    },
+    {
+      "name": "BCU nr 3 w dziedzinie elektryki we Wrocławiu",
+      "type": "branżowe centrum umiejętności",
+      "city": "Wrocław",
+      "address": "ul. Strzegomska 49a",
+      "website": "https://bcu.cpkz.edu.pl/",
+      "sectors": "elektryka, energetyka, pomiary, diagnostyka",
+      "occupations": "kursy i szkolenia BCU w dziedzinie elektryki",
+      "public_summary": "Kursy, szkolenia i kwalifikacje sektorowe w obszarze elektryki.",
+      "public_contact_email": "bcu@cpkz.edu.pl",
+      "public_phone": "+48 71 798 67 00",
+      "public_city_area": "Fabryczna",
+      "public_tags": "BCU, elektryka, energetyka, kursy"
+    },
+    {
+      "name": "BCU w dziedzinie florystyki we Wrocławiu",
+      "type": "branżowe centrum umiejętności",
+      "city": "Wrocław",
+      "address": "ul. Szkocka 64",
+      "website": "https://bcuflorystyka.pl/",
+      "sectors": "florystyka, zieleń, usługi",
+      "occupations": "kursy i szkolenia BCU w dziedzinie florystyki",
+      "public_summary": "Kursy i szkolenia związane z florystyką, roślinami i usługami dekoracyjnymi.",
+      "public_contact_email": "hello@bcuflorystyka.pl",
+      "public_phone": "71 798 69 02 wew. 107",
+      "public_city_area": "Fabryczna",
+      "public_tags": "BCU, florystyka, kursy, szkolenia"
+    },
+    {
+      "name": "BCU w dziedzinie logistyki we Wrocławiu",
+      "type": "branżowe centrum umiejętności",
+      "city": "Wrocław",
+      "address": "ul. Sołtysowicka 19b",
+      "website": "https://bcu-logistyka.pl/",
+      "sectors": "logistyka, magazynowanie, transport",
+      "occupations": "kursy i szkolenia BCU w dziedzinie logistyki",
+      "public_summary": "Kursy, szkolenia i doradztwo w obszarze logistyki.",
+      "public_contact_email": "kontakt@bcu-logistyka.pl",
+      "public_phone": "71 324 68 42 wew. 178",
+      "public_city_area": "Psie Pole",
+      "public_tags": "BCU, logistyka, kursy, szkolenia"
+    },
+    {
+      "name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+      "type": "technikum / branżowa szkoła I stopnia",
+      "city": "Wrocław",
+      "address": "ul. Kamienna 86",
+      "website": "http://www.zsg.wroclaw.pl/",
+      "sectors": "gastronomia, hotelarstwo, turystyka",
+      "occupations": "technik hotelarstwa, technik organizacji turystyki, technik żywienia i usług gastronomicznych, kucharz, kelner",
+      "public_summary": "Kształcenie dla branży gastronomicznej, hotelarskiej i turystycznej.",
+      "public_contact_email": "sekretariat.zsg@wroclawskaedukacja.pl",
+      "public_phone": "71 798 69 10",
+      "public_city_area": "Krzyki",
+      "public_tags": "gastronomia, hotelarstwo, turystyka"
+    },
+    {
+      "name": "Zespół Szkół Logistycznych we Wrocławiu",
+      "type": "technikum / branżowa szkoła II stopnia",
+      "city": "Wrocław",
+      "address": "ul. Jana Władysława Dawida 9-11",
+      "website": "https://www.logistyk-zsl.wroclaw.pl/",
+      "sectors": "logistyka, spedycja, transport kolejowy",
+      "occupations": "technik eksploatacji portów i terminali, technik elektroenergetyk transportu szynowego, technik logistyk, technik spedytor, technik transportu kolejowego, magazynier-logistyk",
+      "public_summary": "Oferta logistyczno-spedycyjna i kolejowa, w tym technikum oraz ścieżka branżowa II stopnia.",
+      "public_contact_email": "sekretariat.zsl@wroclawskaedukacja.pl",
+      "public_phone": "71 798 68 99",
+      "public_city_area": "Krzyki",
+      "public_tags": "logistyka, spedycja, kolej, transport"
+    },
+    {
+      "name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+      "type": "technikum",
+      "city": "Wrocław",
+      "address": "ul. Braniborska 57",
+      "website": "https://www.ezn.edu.pl",
+      "sectors": "automatyka, elektronika, informatyka, mechatronika, programowanie",
+      "occupations": "technik automatyk, technik elektronik, technik informatyk, technik mechatronik, technik programista",
+      "public_summary": "Oferta dla zawodów technicznych związanych z elektroniką, automatyką, mechatroniką, IT i programowaniem.",
+      "public_contact_email": "sekretariat.ezn@wroclawskaedukacja.pl",
+      "public_phone": "71 798 67 02",
+      "public_city_area": "Stare Miasto",
+      "public_tags": "automatyka, elektronika, IT, mechatronika, programowanie"
+    },
+    {
+      "name": "Zespół Szkół nr 3 we Wrocławiu",
+      "type": "technikum",
+      "city": "Wrocław",
+      "address": "ul. Szkocka 64",
+      "website": "https://zs3wroc.edupage.org",
+      "sectors": "hotelarstwo, turystyka, gastronomia, rachunkowość, ogrodnictwo, architektura krajobrazu",
+      "occupations": "technik architektury krajobrazu, technik hotelarstwa, technik organizacji turystyki, technik żywienia i usług gastronomicznych, technik rachunkowości, technik ogrodnik",
+      "public_summary": "Oferta łącząca turystykę, hotelarstwo, gastronomię, rachunkowość i kierunki przyrodniczo-ogrodnicze.",
+      "public_contact_email": "sekretariat.zs03@wroclawskaedukacja.pl",
+      "public_phone": "71 798 69 02",
+      "public_city_area": "Fabryczna",
+      "public_tags": "hotelarstwo, turystyka, gastronomia, ogrodnictwo"
+    },
+    {
+      "name": "Zespół Szkół nr 8 we Wrocławiu",
+      "type": "technikum",
+      "city": "Wrocław",
+      "address": "ul. Mikołaja Reja 3",
+      "website": "https://www.zs8.wroc.pl/",
+      "sectors": "informatyka",
+      "occupations": "technik informatyk",
+      "public_summary": "Technikum nr 19 z ofertą dla uczniów zainteresowanych informatyką.",
+      "public_contact_email": "samorzad@zs8.wroc.pl",
+      "public_phone": "71 798 67 04",
+      "public_city_area": "Śródmieście",
+      "public_tags": "informatyka"
+    },
+    {
+      "name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+      "type": "technikum",
+      "city": "Wrocław",
+      "address": "ul. Skwierzyńska 1-7",
+      "website": "https://www.t15.wroclaw.pl",
+      "sectors": "analityka, grafika, poligrafia, ochrona środowiska, reklama, multimedia",
+      "occupations": "technik analityk, technik grafiki i poligrafii cyfrowej, technik ochrony środowiska, technik reklamy, technik fotografii i multimediów",
+      "public_summary": "Kształcenie w analizie, ochronie środowiska, grafice, reklamie, fotografii i multimediach.",
+      "public_contact_email": "sekretariat@t15.wroclaw.pl",
+      "public_phone": "71 798 69 01",
+      "public_city_area": "Fabryczna",
+      "public_tags": "analityka, środowisko, grafika, reklama, multimedia"
+    },
+    {
+      "name": "Zespół Szkół Ekonomiczno-Ogólnokształcących we Wrocławiu",
+      "type": "technikum",
+      "city": "Wrocław",
+      "address": "ul. Drukarska 50",
+      "website": "https://www.drukarska.net",
+      "sectors": "ekonomia, handel",
+      "occupations": "technik ekonomista, technik handlowiec",
+      "public_summary": "Oferta dla obszaru ekonomii i handlu.",
+      "public_contact_email": "sekretariat.zse@wroclawskaedukacja.pl",
+      "public_phone": "71 798 69 08",
+      "public_city_area": "Krzyki",
+      "public_tags": "ekonomia, handel"
+    },
+    {
+      "name": "Zespół Szkół nr 6 we Wrocławiu",
+      "type": "technikum",
+      "city": "Wrocław",
+      "address": "ul. Nowodworska 70-82",
+      "website": "https://zs6.wroc.pl/",
+      "sectors": "ekonomia, reklama",
+      "occupations": "technik ekonomista, technik reklamy",
+      "public_summary": "Oferta technikum integracyjnego w obszarze ekonomii i reklamy.",
+      "public_contact_email": "sekretariat@zs6.wroc.pl",
+      "public_phone": "71 798 69 11",
+      "public_city_area": "Fabryczna",
+      "public_tags": "ekonomia, reklama, integracja"
+    },
+    {
+      "name": "Technikum nr 18 we Wrocławiu",
+      "type": "technikum",
+      "city": "Wrocław",
+      "address": "ul. Ślężna 2-24",
+      "website": "https://www.t18.wroclaw.pl/",
+      "sectors": "weterynaria, optyka, ortopedia",
+      "occupations": "technik weterynarii, technik optyk, technik ortopeda",
+      "public_summary": "Technikum w obszarach weterynarii, optyki okularowej i ortopedii.",
+      "public_contact_email": "Agnieszka.Stobiecka-Switala@wroclawskaedukacja.pl",
+      "public_phone": "71 798 67 08",
+      "public_city_area": "Krzyki",
+      "public_tags": "weterynaria, optyka, ortopedia"
+    },
+    {
+      "name": "Zespół Szkół nr 18 we Wrocławiu",
+      "type": "technikum / branżowa szkoła I stopnia",
+      "city": "Wrocław",
+      "address": "ul. Młodych Techników 58",
+      "website": "https://www.zs18.wroc.pl",
+      "sectors": "mechanika, elektryka, mechatronika, chłodnictwo, OZE",
+      "occupations": "technicy: chłodnictwa i klimatyzacji, elektryk, mechanik, mechatronik, OZE oraz zawody branżowe",
+      "public_summary": "Oferta techniczna i branżowa dla mechaniki, elektryki, mechatroniki, chłodnictwa i odnawialnych źródeł energii.",
+      "public_contact_email": "szkola@zs18.wroc.pl",
+      "public_phone": "71 798 68 93",
+      "public_city_area": "Stare Miasto",
+      "public_tags": "mechanika, elektryka, mechatronika, chłodnictwo, OZE"
+    },
+    {
+      "name": "Zespół Szkół nr 1 we Wrocławiu",
+      "type": "technikum / branżowa szkoła I stopnia",
+      "city": "Wrocław",
+      "address": "ul. Słubicka 29-33",
+      "website": "https://zs1.wroc.pl",
+      "sectors": "handel, informatyka, moda, reklama, krawiectwo",
+      "occupations": "technik handlowiec, technik informatyk, technik przemysłu mody, technik reklamy, krawiec, sprzedawca",
+      "public_summary": "Oferta technikum i szkoły branżowej w handlu, informatyce, modzie, reklamie, krawiectwie i sprzedaży.",
+      "public_contact_email": "sekretariat.zs01@wroclawskaedukacja.pl",
+      "public_phone": "71 355 08 74",
+      "public_city_area": "Stare Miasto",
+      "public_tags": "handel, informatyka, moda, reklama, krawiectwo"
+    },
+    {
+      "name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "type": "technikum / branżowa szkoła I stopnia",
+      "city": "Wrocław",
+      "address": "ul. Jana Władysława Dawida 5",
+      "website": "https://www.zsz5.edupage.org",
+      "sectors": "handel, usługi fryzjerskie, gastronomia, elektryka, motoryzacja, budownictwo, rzemiosło",
+      "occupations": "technik handlowiec, technik usług fryzjerskich oraz zawody branżowe w usługach, gastronomii, budownictwie i motoryzacji",
+      "public_summary": "Oferta techniczna i branżowa dla handlu, usług fryzjerskich, gastronomii, elektryki, motoryzacji, budownictwa i rzemiosła.",
+      "public_contact_email": "Sekretariat.zsz5@wroclawskaedukacja.pl",
+      "public_phone": "71 798 69 34",
+      "public_city_area": "Krzyki",
+      "public_tags": "handel, fryzjerstwo, gastronomia, elektryka, motoryzacja, budownictwo"
+    }
+  ],
+  "programs": [
+    {
+      "school_name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+      "school_type_label": "Technikum nr 7",
+      "education_type": "technikum",
+      "program_name": "technik elektronik",
+      "branch": "elektronika",
+      "description": "Oferta kształcenia: technik elektronik. Typ ścieżki: Technikum nr 7.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+      "school_type_label": "Technikum nr 7",
+      "education_type": "technikum",
+      "program_name": "technik informatyk",
+      "branch": "informatyka",
+      "description": "Oferta kształcenia: technik informatyk. Typ ścieżki: Technikum nr 7.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+      "school_type_label": "Technikum nr 7",
+      "education_type": "technikum",
+      "program_name": "technik teleinformatyk",
+      "branch": "informatyka",
+      "description": "Oferta kształcenia: technik teleinformatyk. Typ ścieżki: Technikum nr 7.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+      "school_type_label": "Technikum nr 7",
+      "education_type": "technikum",
+      "program_name": "technik robotyk",
+      "branch": "robotyka",
+      "description": "Oferta kształcenia: technik robotyk. Typ ścieżki: Technikum nr 7.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 1",
+      "education_type": "bs_i",
+      "program_name": "elektronik",
+      "branch": "elektronika",
+      "description": "Oferta kształcenia: elektronik. Typ ścieżki: Branżowa Szkoła I stopnia nr 1.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+      "school_type_label": "Technikum nr 2",
+      "education_type": "technikum",
+      "program_name": "technik mechanik",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: technik mechanik. Typ ścieżki: Technikum nr 2.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+      "school_type_label": "Technikum nr 2",
+      "education_type": "technikum",
+      "program_name": "technik mechatronik",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: technik mechatronik. Typ ścieżki: Technikum nr 2.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+      "school_type_label": "Technikum nr 2",
+      "education_type": "technikum",
+      "program_name": "technik pojazdów samochodowych",
+      "branch": "motoryzacja",
+      "description": "Oferta kształcenia: technik pojazdów samochodowych. Typ ścieżki: Technikum nr 2.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+      "education_type": "bs_i",
+      "program_name": "elektromechanik pojazdów samochodowych",
+      "branch": "motoryzacja",
+      "description": "Oferta kształcenia: elektromechanik pojazdów samochodowych. Typ ścieżki: Branżowa Szkoła I stopnia nr 2.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+      "education_type": "bs_i",
+      "program_name": "kierowca mechanik",
+      "branch": "motoryzacja",
+      "description": "Oferta kształcenia: kierowca mechanik. Typ ścieżki: Branżowa Szkoła I stopnia nr 2.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+      "education_type": "bs_i",
+      "program_name": "mechanik motocyklowy",
+      "branch": "motoryzacja",
+      "description": "Oferta kształcenia: mechanik motocyklowy. Typ ścieżki: Branżowa Szkoła I stopnia nr 2.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+      "education_type": "bs_i",
+      "program_name": "mechanik pojazdów samochodowych",
+      "branch": "motoryzacja",
+      "description": "Oferta kształcenia: mechanik pojazdów samochodowych. Typ ścieżki: Branżowa Szkoła I stopnia nr 2.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+      "education_type": "bs_i",
+      "program_name": "lakiernik samochodowy",
+      "branch": "motoryzacja",
+      "description": "Oferta kształcenia: lakiernik samochodowy. Typ ścieżki: Branżowa Szkoła I stopnia nr 2.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+      "education_type": "bs_i",
+      "program_name": "blacharz samochodowy",
+      "branch": "motoryzacja",
+      "description": "Oferta kształcenia: blacharz samochodowy. Typ ścieżki: Branżowa Szkoła I stopnia nr 2.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Budowlanych we Wrocławiu",
+      "school_type_label": "Technikum nr 11",
+      "education_type": "technikum",
+      "program_name": "technik budownictwa",
+      "branch": "budownictwo",
+      "description": "Oferta kształcenia: technik budownictwa. Typ ścieżki: Technikum nr 11.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Budowlanych we Wrocławiu",
+      "school_type_label": "Technikum nr 11",
+      "education_type": "technikum",
+      "program_name": "technik geodeta",
+      "branch": "budownictwo",
+      "description": "Oferta kształcenia: technik geodeta. Typ ścieżki: Technikum nr 11.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Budowlanych we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 4",
+      "education_type": "bs_i",
+      "program_name": "monter zabudowy i robót wykończeniowych w budownictwie",
+      "branch": "budownictwo",
+      "description": "Oferta kształcenia: monter zabudowy i robót wykończeniowych w budownictwie. Typ ścieżki: Branżowa Szkoła I stopnia nr 4.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 6",
+      "education_type": "technikum",
+      "program_name": "technik automatyk",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: technik automatyk. Typ ścieżki: Technikum nr 6.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 6",
+      "education_type": "technikum",
+      "program_name": "technik eksploatacji portów i terminali",
+      "branch": "logistyka",
+      "description": "Oferta kształcenia: technik eksploatacji portów i terminali. Typ ścieżki: Technikum nr 6.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 6",
+      "education_type": "technikum",
+      "program_name": "technik logistyk",
+      "branch": "logistyka",
+      "description": "Oferta kształcenia: technik logistyk. Typ ścieżki: Technikum nr 6.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 6",
+      "education_type": "technikum",
+      "program_name": "technik lotniskowych służb operacyjnych",
+      "branch": "lotnictwo",
+      "description": "Oferta kształcenia: technik lotniskowych służb operacyjnych. Typ ścieżki: Technikum nr 6.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 6",
+      "education_type": "technikum",
+      "program_name": "technik mechanik",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: technik mechanik. Typ ścieżki: Technikum nr 6.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 6",
+      "education_type": "technikum",
+      "program_name": "technik mechanik lotniczy",
+      "branch": "lotnictwo",
+      "description": "Oferta kształcenia: technik mechanik lotniczy. Typ ścieżki: Technikum nr 6.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 6",
+      "education_type": "technikum",
+      "program_name": "technik mechatronik",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: technik mechatronik. Typ ścieżki: Technikum nr 6.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 6",
+      "education_type": "bs_i",
+      "program_name": "mechatronik",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: mechatronik. Typ ścieżki: Branżowa Szkoła I stopnia nr 6.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 6",
+      "education_type": "bs_i",
+      "program_name": "operator obrabiarek skrawających",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: operator obrabiarek skrawających. Typ ścieżki: Branżowa Szkoła I stopnia nr 6.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Ekonomiczno-Administracyjnych we Wrocławiu",
+      "school_type_label": "Technikum nr 13",
+      "education_type": "technikum",
+      "program_name": "technik ekonomista",
+      "branch": "ekonomia",
+      "description": "Oferta kształcenia: technik ekonomista. Typ ścieżki: Technikum nr 13.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Ekonomiczno-Administracyjnych we Wrocławiu",
+      "school_type_label": "Technikum nr 13",
+      "education_type": "technikum",
+      "program_name": "technik rachunkowości",
+      "branch": "ekonomia",
+      "description": "Oferta kształcenia: technik rachunkowości. Typ ścieżki: Technikum nr 13.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Ekonomiczno-Administracyjnych we Wrocławiu",
+      "school_type_label": "Technikum nr 13",
+      "education_type": "technikum",
+      "program_name": "technik reklamy",
+      "branch": "reklama",
+      "description": "Oferta kształcenia: technik reklamy. Typ ścieżki: Technikum nr 13.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Centrum Placówek Kształcenia Zawodowego we Wrocławiu",
+      "school_type_label": "Centrum kształcenia sektorowego",
+      "education_type": "kurs",
+      "program_name": "projekty stażowe i wsparcie kształcenia praktycznego",
+      "branch": "kształcenie praktyczne",
+      "description": "Oferta kształcenia: projekty stażowe i wsparcie kształcenia praktycznego. Typ ścieżki: Centrum kształcenia sektorowego.",
+      "source_label": "Centrum Placówek Kształcenia Zawodowego we Wrocławiu",
+      "source_url": "https://cpkz.edu.pl/",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "BCU w dziedzinie automatyki przemysłowej we Wrocławiu",
+      "school_type_label": "Branżowe Centrum Umiejętności",
+      "education_type": "kurs",
+      "program_name": "kursy i szkolenia BCU: automatyka przemysłowa",
+      "branch": "automatyka przemysłowa",
+      "description": "Oferta kształcenia: kursy i szkolenia BCU: automatyka przemysłowa. Typ ścieżki: Branżowe Centrum Umiejętności.",
+      "source_label": "BCU Automatyka Przemysłowa we Wrocławiu",
+      "source_url": "https://bcu-automatyka.pl/",
+      "verified_at": "2026-07-27"
+    },
+    {
+      "school_name": "BCU w dziedzinie elektromobilności we Wrocławiu",
+      "school_type_label": "Branżowe Centrum Umiejętności",
+      "education_type": "kurs",
+      "program_name": "kursy i szkolenia BCU: elektromobilność",
+      "branch": "elektromobilność",
+      "description": "Oferta kształcenia: kursy i szkolenia BCU: elektromobilność. Typ ścieżki: Branżowe Centrum Umiejętności.",
+      "source_label": "BCU Elektromobilność we Wrocławiu",
+      "source_url": "https://bcu2.wroclaw.pl/bcu/home.nsf/pl/index?open",
+      "verified_at": "2026-07-27"
+    },
+    {
+      "school_name": "BCU nr 3 w dziedzinie elektryki we Wrocławiu",
+      "school_type_label": "Branżowe Centrum Umiejętności",
+      "education_type": "kurs",
+      "program_name": "kursy i szkolenia BCU: elektryka",
+      "branch": "elektryka",
+      "description": "Oferta kształcenia: kursy i szkolenia BCU: elektryka. Typ ścieżki: Branżowe Centrum Umiejętności.",
+      "source_label": "BCU Elektryka we Wrocławiu",
+      "source_url": "https://bcu.cpkz.edu.pl/",
+      "verified_at": "2026-07-27"
+    },
+    {
+      "school_name": "BCU w dziedzinie florystyki we Wrocławiu",
+      "school_type_label": "Branżowe Centrum Umiejętności",
+      "education_type": "kurs",
+      "program_name": "kursy i szkolenia BCU: florystyka",
+      "branch": "florystyka",
+      "description": "Oferta kształcenia: kursy i szkolenia BCU: florystyka. Typ ścieżki: Branżowe Centrum Umiejętności.",
+      "source_label": "BCU Florystyka we Wrocławiu",
+      "source_url": "https://bcuflorystyka.pl/",
+      "verified_at": "2026-07-27"
+    },
+    {
+      "school_name": "BCU w dziedzinie logistyki we Wrocławiu",
+      "school_type_label": "Branżowe Centrum Umiejętności",
+      "education_type": "kurs",
+      "program_name": "kursy i szkolenia BCU: logistyka",
+      "branch": "logistyka",
+      "description": "Oferta kształcenia: kursy i szkolenia BCU: logistyka. Typ ścieżki: Branżowe Centrum Umiejętności.",
+      "source_label": "BCU Logistyka we Wrocławiu",
+      "source_url": "https://bcu-logistyka.pl/",
+      "verified_at": "2026-07-27"
+    },
+    {
+      "school_name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+      "school_type_label": "Technikum nr 9",
+      "education_type": "technikum",
+      "program_name": "technik hotelarstwa",
+      "branch": "turystyka",
+      "description": "Oferta kształcenia: technik hotelarstwa. Typ ścieżki: Technikum nr 9.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+      "school_type_label": "Technikum nr 9",
+      "education_type": "technikum",
+      "program_name": "technik organizacji turystyki",
+      "branch": "turystyka",
+      "description": "Oferta kształcenia: technik organizacji turystyki. Typ ścieżki: Technikum nr 9.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+      "school_type_label": "Technikum nr 9",
+      "education_type": "technikum",
+      "program_name": "technik żywienia i usług gastronomicznych",
+      "branch": "gastronomia",
+      "description": "Oferta kształcenia: technik żywienia i usług gastronomicznych. Typ ścieżki: Technikum nr 9.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 9",
+      "education_type": "bs_i",
+      "program_name": "kucharz",
+      "branch": "gastronomia",
+      "description": "Oferta kształcenia: kucharz. Typ ścieżki: Branżowa Szkoła I stopnia nr 9.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 9",
+      "education_type": "bs_i",
+      "program_name": "kelner",
+      "branch": "gastronomia",
+      "description": "Oferta kształcenia: kelner. Typ ścieżki: Branżowa Szkoła I stopnia nr 9.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+      "school_type_label": "Technikum nr 12",
+      "education_type": "technikum",
+      "program_name": "technik eksploatacji portów i terminali",
+      "branch": "logistyka",
+      "description": "Oferta kształcenia: technik eksploatacji portów i terminali. Typ ścieżki: Technikum nr 12.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+      "school_type_label": "Technikum nr 12",
+      "education_type": "technikum",
+      "program_name": "technik elektroenergetyk transportu szynowego",
+      "branch": "energetyka",
+      "description": "Oferta kształcenia: technik elektroenergetyk transportu szynowego. Typ ścieżki: Technikum nr 12.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+      "school_type_label": "Technikum nr 12",
+      "education_type": "technikum",
+      "program_name": "technik logistyk",
+      "branch": "logistyka",
+      "description": "Oferta kształcenia: technik logistyk. Typ ścieżki: Technikum nr 12.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+      "school_type_label": "Technikum nr 12",
+      "education_type": "technikum",
+      "program_name": "technik spedytor",
+      "branch": "logistyka",
+      "description": "Oferta kształcenia: technik spedytor. Typ ścieżki: Technikum nr 12.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+      "school_type_label": "Technikum nr 12",
+      "education_type": "technikum",
+      "program_name": "technik transportu kolejowego",
+      "branch": "logistyka",
+      "description": "Oferta kształcenia: technik transportu kolejowego. Typ ścieżki: Technikum nr 12.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia",
+      "education_type": "bs_i",
+      "program_name": "magazynier-logistyk",
+      "branch": "logistyka",
+      "description": "Oferta kształcenia: magazynier-logistyk. Typ ścieżki: Branżowa Szkoła I stopnia.",
+      "source_label": "Zespół Szkół Logistycznych we Wrocławiu",
+      "source_url": "https://www.logistyk-zsl.wroclaw.pl/",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła II stopnia",
+      "education_type": "bs_ii",
+      "program_name": "technik logistyk",
+      "branch": "logistyka",
+      "description": "Oferta kształcenia: technik logistyk. Typ ścieżki: Branżowa Szkoła II stopnia.",
+      "source_label": "Zespół Szkół Logistycznych we Wrocławiu",
+      "source_url": "https://www.logistyk-zsl.wroclaw.pl/",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 10",
+      "education_type": "technikum",
+      "program_name": "technik automatyk",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: technik automatyk. Typ ścieżki: Technikum nr 10.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 10",
+      "education_type": "technikum",
+      "program_name": "technik elektronik",
+      "branch": "elektronika",
+      "description": "Oferta kształcenia: technik elektronik. Typ ścieżki: Technikum nr 10.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 10",
+      "education_type": "technikum",
+      "program_name": "technik informatyk",
+      "branch": "informatyka",
+      "description": "Oferta kształcenia: technik informatyk. Typ ścieżki: Technikum nr 10.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 10",
+      "education_type": "technikum",
+      "program_name": "technik mechatronik",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: technik mechatronik. Typ ścieżki: Technikum nr 10.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+      "school_type_label": "Technikum nr 10",
+      "education_type": "technikum",
+      "program_name": "technik programista",
+      "branch": "informatyka",
+      "description": "Oferta kształcenia: technik programista. Typ ścieżki: Technikum nr 10.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+      "school_type_label": "Technikum nr 16",
+      "education_type": "technikum",
+      "program_name": "technik architektury krajobrazu",
+      "branch": "architektura krajobrazu",
+      "description": "Oferta kształcenia: technik architektury krajobrazu. Typ ścieżki: Technikum nr 16.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+      "school_type_label": "Technikum nr 16",
+      "education_type": "technikum",
+      "program_name": "technik hotelarstwa",
+      "branch": "turystyka",
+      "description": "Oferta kształcenia: technik hotelarstwa. Typ ścieżki: Technikum nr 16.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+      "school_type_label": "Technikum nr 16",
+      "education_type": "technikum",
+      "program_name": "technik organizacji turystyki",
+      "branch": "turystyka",
+      "description": "Oferta kształcenia: technik organizacji turystyki. Typ ścieżki: Technikum nr 16.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+      "school_type_label": "Technikum nr 16",
+      "education_type": "technikum",
+      "program_name": "technik żywienia i usług gastronomicznych",
+      "branch": "gastronomia",
+      "description": "Oferta kształcenia: technik żywienia i usług gastronomicznych. Typ ścieżki: Technikum nr 16.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+      "school_type_label": "Technikum nr 16",
+      "education_type": "technikum",
+      "program_name": "technik rachunkowości",
+      "branch": "ekonomia",
+      "description": "Oferta kształcenia: technik rachunkowości. Typ ścieżki: Technikum nr 16.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+      "school_type_label": "Technikum nr 16",
+      "education_type": "technikum",
+      "program_name": "technik ogrodnik",
+      "branch": "ogrodnictwo",
+      "description": "Oferta kształcenia: technik ogrodnik. Typ ścieżki: Technikum nr 16.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 8 we Wrocławiu",
+      "school_type_label": "Technikum nr 19",
+      "education_type": "technikum",
+      "program_name": "technik informatyk",
+      "branch": "informatyka",
+      "description": "Oferta kształcenia: technik informatyk. Typ ścieżki: Technikum nr 19.",
+      "source_label": "Zespół Szkół nr 8 we Wrocławiu - rekrutacja",
+      "source_url": "https://www.zs8.wroc.pl/rekrutacja-kandydaci-tech/",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+      "school_type_label": "Technikum nr 15",
+      "education_type": "technikum",
+      "program_name": "technik analityk",
+      "branch": "analityka",
+      "description": "Oferta kształcenia: technik analityk. Typ ścieżki: Technikum nr 15.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+      "school_type_label": "Technikum nr 15",
+      "education_type": "technikum",
+      "program_name": "technik grafiki i poligrafii cyfrowej",
+      "branch": "grafika i multimedia",
+      "description": "Oferta kształcenia: technik grafiki i poligrafii cyfrowej. Typ ścieżki: Technikum nr 15.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+      "school_type_label": "Technikum nr 15",
+      "education_type": "technikum",
+      "program_name": "technik ochrony środowiska",
+      "branch": "ochrona środowiska",
+      "description": "Oferta kształcenia: technik ochrony środowiska. Typ ścieżki: Technikum nr 15.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+      "school_type_label": "Technikum nr 15",
+      "education_type": "technikum",
+      "program_name": "technik reklamy",
+      "branch": "reklama",
+      "description": "Oferta kształcenia: technik reklamy. Typ ścieżki: Technikum nr 15.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+      "school_type_label": "Technikum nr 15",
+      "education_type": "technikum",
+      "program_name": "technik fotografii i multimediów",
+      "branch": "grafika i multimedia",
+      "description": "Oferta kształcenia: technik fotografii i multimediów. Typ ścieżki: Technikum nr 15.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Ekonomiczno-Ogólnokształcących we Wrocławiu",
+      "school_type_label": "Technikum nr 8",
+      "education_type": "technikum",
+      "program_name": "technik ekonomista",
+      "branch": "ekonomia",
+      "description": "Oferta kształcenia: technik ekonomista. Typ ścieżki: Technikum nr 8.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Ekonomiczno-Ogólnokształcących we Wrocławiu",
+      "school_type_label": "Technikum nr 8",
+      "education_type": "technikum",
+      "program_name": "technik handlowiec",
+      "branch": "ekonomia",
+      "description": "Oferta kształcenia: technik handlowiec. Typ ścieżki: Technikum nr 8.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 6 we Wrocławiu",
+      "school_type_label": "Technikum nr 14",
+      "education_type": "technikum",
+      "program_name": "technik ekonomista",
+      "branch": "ekonomia",
+      "description": "Oferta kształcenia: technik ekonomista. Typ ścieżki: Technikum nr 14.",
+      "source_label": "Zespół Szkół nr 6 we Wrocławiu - oferta edukacyjna",
+      "source_url": "https://zs6.wroc.pl/strefa-ucznia/oferta-edukacyjna/",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 6 we Wrocławiu",
+      "school_type_label": "Technikum nr 14",
+      "education_type": "technikum",
+      "program_name": "technik reklamy",
+      "branch": "reklama",
+      "description": "Oferta kształcenia: technik reklamy. Typ ścieżki: Technikum nr 14.",
+      "source_label": "Zespół Szkół nr 6 we Wrocławiu - oferta edukacyjna",
+      "source_url": "https://zs6.wroc.pl/strefa-ucznia/oferta-edukacyjna/",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Technikum nr 18 we Wrocławiu",
+      "school_type_label": "Technikum nr 18",
+      "education_type": "technikum",
+      "program_name": "technik weterynarii",
+      "branch": "zdrowie i usługi medyczne",
+      "description": "Oferta kształcenia: technik weterynarii. Typ ścieżki: Technikum nr 18.",
+      "source_label": "Technikum nr 18 we Wrocławiu - rekrutacja",
+      "source_url": "https://www.t18.wroclaw.pl/dlauczniow/rekrutacja",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Technikum nr 18 we Wrocławiu",
+      "school_type_label": "Technikum nr 18",
+      "education_type": "technikum",
+      "program_name": "technik optyki okularowej",
+      "branch": "zdrowie i usługi medyczne",
+      "description": "Oferta kształcenia: technik optyki okularowej. Typ ścieżki: Technikum nr 18.",
+      "source_label": "Technikum nr 18 we Wrocławiu - rekrutacja",
+      "source_url": "https://www.t18.wroclaw.pl/dlauczniow/rekrutacja",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Technikum nr 18 we Wrocławiu",
+      "school_type_label": "Technikum nr 18",
+      "education_type": "technikum",
+      "program_name": "technik ortopeda",
+      "branch": "zdrowie i usługi medyczne",
+      "description": "Oferta kształcenia: technik ortopeda. Typ ścieżki: Technikum nr 18.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - Technikum nr 18",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szkola/271741",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+      "school_type_label": "Technikum nr 3",
+      "education_type": "technikum",
+      "program_name": "technik chłodnictwa i klimatyzacji",
+      "branch": "chłodnictwo i klimatyzacja",
+      "description": "Oferta kształcenia: technik chłodnictwa i klimatyzacji. Typ ścieżki: Technikum nr 3.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+      "school_type_label": "Technikum nr 3",
+      "education_type": "technikum",
+      "program_name": "technik elektryk",
+      "branch": "energetyka",
+      "description": "Oferta kształcenia: technik elektryk. Typ ścieżki: Technikum nr 3.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+      "school_type_label": "Technikum nr 3",
+      "education_type": "technikum",
+      "program_name": "technik mechanik",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: technik mechanik. Typ ścieżki: Technikum nr 3.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+      "school_type_label": "Technikum nr 3",
+      "education_type": "technikum",
+      "program_name": "technik mechatronik",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: technik mechatronik. Typ ścieżki: Technikum nr 3.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+      "school_type_label": "Technikum nr 3",
+      "education_type": "technikum",
+      "program_name": "technik urządzeń i systemów energetyki odnawialnej",
+      "branch": "energetyka",
+      "description": "Oferta kształcenia: technik urządzeń i systemów energetyki odnawialnej. Typ ścieżki: Technikum nr 3.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 3",
+      "education_type": "bs_i",
+      "program_name": "elektromechanik",
+      "branch": "energetyka",
+      "description": "Oferta kształcenia: elektromechanik. Typ ścieżki: Branżowa Szkoła I stopnia nr 3.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 3",
+      "education_type": "bs_i",
+      "program_name": "elektryk",
+      "branch": "energetyka",
+      "description": "Oferta kształcenia: elektryk. Typ ścieżki: Branżowa Szkoła I stopnia nr 3.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 3",
+      "education_type": "bs_i",
+      "program_name": "mechanik-monter maszyn i urządzeń",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: mechanik-monter maszyn i urządzeń. Typ ścieżki: Branżowa Szkoła I stopnia nr 3.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 3",
+      "education_type": "bs_i",
+      "program_name": "operator obrabiarek skrawających",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: operator obrabiarek skrawających. Typ ścieżki: Branżowa Szkoła I stopnia nr 3.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 3",
+      "education_type": "bs_i",
+      "program_name": "ślusarz",
+      "branch": "mechanika",
+      "description": "Oferta kształcenia: ślusarz. Typ ścieżki: Branżowa Szkoła I stopnia nr 3.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+      "school_type_label": "Technikum nr 1",
+      "education_type": "technikum",
+      "program_name": "technik handlowiec",
+      "branch": "ekonomia",
+      "description": "Oferta kształcenia: technik handlowiec. Typ ścieżki: Technikum nr 1.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+      "school_type_label": "Technikum nr 1",
+      "education_type": "technikum",
+      "program_name": "technik informatyk",
+      "branch": "informatyka",
+      "description": "Oferta kształcenia: technik informatyk. Typ ścieżki: Technikum nr 1.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+      "school_type_label": "Technikum nr 1",
+      "education_type": "technikum",
+      "program_name": "technik przemysłu mody",
+      "branch": "moda",
+      "description": "Oferta kształcenia: technik przemysłu mody. Typ ścieżki: Technikum nr 1.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+      "school_type_label": "Technikum nr 1",
+      "education_type": "technikum",
+      "program_name": "technik reklamy",
+      "branch": "reklama",
+      "description": "Oferta kształcenia: technik reklamy. Typ ścieżki: Technikum nr 1.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 10",
+      "education_type": "bs_i",
+      "program_name": "krawiec",
+      "branch": "rzemiosło i usługi",
+      "description": "Oferta kształcenia: krawiec. Typ ścieżki: Branżowa Szkoła I stopnia nr 10.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 10",
+      "education_type": "bs_i",
+      "program_name": "sprzedawca",
+      "branch": "ekonomia",
+      "description": "Oferta kształcenia: sprzedawca. Typ ścieżki: Branżowa Szkoła I stopnia nr 10.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Technikum nr 5",
+      "education_type": "technikum",
+      "program_name": "technik handlowiec",
+      "branch": "ekonomia",
+      "description": "Oferta kształcenia: technik handlowiec. Typ ścieżki: Technikum nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Technikum nr 5",
+      "education_type": "technikum",
+      "program_name": "technik usług fryzjerskich",
+      "branch": "rzemiosło i usługi",
+      "description": "Oferta kształcenia: technik usług fryzjerskich. Typ ścieżki: Technikum nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "blacharz samochodowy",
+      "branch": "motoryzacja",
+      "description": "Oferta kształcenia: blacharz samochodowy. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "cukiernik",
+      "branch": "gastronomia",
+      "description": "Oferta kształcenia: cukiernik. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "elektryk",
+      "branch": "energetyka",
+      "description": "Oferta kształcenia: elektryk. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "fotograf",
+      "branch": "grafika i multimedia",
+      "description": "Oferta kształcenia: fotograf. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "fryzjer",
+      "branch": "rzemiosło i usługi",
+      "description": "Oferta kształcenia: fryzjer. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "krawiec",
+      "branch": "rzemiosło i usługi",
+      "description": "Oferta kształcenia: krawiec. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "kucharz",
+      "branch": "gastronomia",
+      "description": "Oferta kształcenia: kucharz. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "lakiernik samochodowy",
+      "branch": "motoryzacja",
+      "description": "Oferta kształcenia: lakiernik samochodowy. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "monter zabudowy i robót wykończeniowych w budownictwie",
+      "branch": "budownictwo",
+      "description": "Oferta kształcenia: monter zabudowy i robót wykończeniowych w budownictwie. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "murarz-tynkarz",
+      "branch": "budownictwo",
+      "description": "Oferta kształcenia: murarz-tynkarz. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "piekarz",
+      "branch": "gastronomia",
+      "description": "Oferta kształcenia: piekarz. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "sprzedawca",
+      "branch": "ekonomia",
+      "description": "Oferta kształcenia: sprzedawca. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "stolarz",
+      "branch": "rzemiosło i usługi",
+      "description": "Oferta kształcenia: stolarz. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "tapicer",
+      "branch": "rzemiosło i usługi",
+      "description": "Oferta kształcenia: tapicer. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+      "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+      "education_type": "bs_i",
+      "program_name": "kelner",
+      "branch": "gastronomia",
+      "description": "Oferta kształcenia: kelner. Typ ścieżki: Branżowa Szkoła I stopnia nr 5.",
+      "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+      "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+      "verified_at": "2026-07-26"
+    }
+  ],
+  "branch_map": [
+    {
+      "name": "analityka",
+      "description": "Laboratoria, próbki, pomiary i kontrola jakości.",
+      "profiles": [
+        {
+          "name": "technik analityk",
+          "description": "Wykonuje badania laboratoryjne i analizuje próbki. Po szkole można pracować w laboratoriach przemysłowych, kontrolnych lub badawczych.",
+          "school_count": 1,
+          "schools": [
+            "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+              "school_type_label": "Technikum nr 15",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "architektura krajobrazu",
+      "description": "Projektowanie i pielęgnacja zieleni oraz przestrzeni zewnętrznych.",
+      "profiles": [
+        {
+          "name": "technik architektury krajobrazu",
+          "description": "Projektuje i urządza tereny zieleni. Po szkole można pracować przy projektach zieleni, pielęgnacji terenów i małej architekturze.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 3 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+              "school_type_label": "Technikum nr 16",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "automatyka przemysłowa",
+      "description": "Sterowanie, czujniki, napędy i linie produkcyjne.",
+      "profiles": [
+        {
+          "name": "kursy i szkolenia BCU: automatyka przemysłowa",
+          "description": "Szkolenia BCU rozwijające kompetencje w automatyce przemysłowej, sterowaniu i pracy z nowoczesnymi stanowiskami technicznymi.",
+          "school_count": 1,
+          "schools": [
+            "BCU w dziedzinie automatyki przemysłowej we Wrocławiu"
+          ],
+          "types": [
+            "kurs"
+          ],
+          "offerings": [
+            {
+              "school_name": "BCU w dziedzinie automatyki przemysłowej we Wrocławiu",
+              "school_type_label": "Branżowe Centrum Umiejętności",
+              "education_type": "kurs",
+              "source_label": "BCU Automatyka Przemysłowa we Wrocławiu",
+              "source_url": "https://bcu-automatyka.pl/",
+              "verified_at": "2026-07-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "budownictwo",
+      "description": "Budowa, remonty, wykończenia i dokumentacja techniczna.",
+      "profiles": [
+        {
+          "name": "monter zabudowy i robót wykończeniowych w budownictwie",
+          "description": "Wykonuje prace wykończeniowe, zabudowy i elementy suchej zabudowy. Po nauce można pracować na budowach i przy remontach.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół Budowlanych we Wrocławiu",
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Budowlanych we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 4",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "murarz-tynkarz",
+          "description": "Wykonuje mury, tynki i podstawowe prace budowlane. Po nauce można pracować w firmach budowlanych lub remontowych.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik budownictwa",
+          "description": "Pracuje z dokumentacją, pomiarami i organizacją robót budowlanych. Po szkole można pracować na budowie, w biurze technicznym lub firmie wykonawczej.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Budowlanych we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Budowlanych we Wrocławiu",
+              "school_type_label": "Technikum nr 11",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik geodeta",
+          "description": "Wykonuje pomiary terenowe i opracowania geodezyjne. Po szkole można pracować przy inwestycjach, mapach i obsłudze budów.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Budowlanych we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Budowlanych we Wrocławiu",
+              "school_type_label": "Technikum nr 11",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "chłodnictwo i klimatyzacja",
+      "description": "Instalacje chłodnicze, wentylacyjne i klimatyzacyjne.",
+      "profiles": [
+        {
+          "name": "technik chłodnictwa i klimatyzacji",
+          "description": "Montuje i serwisuje urządzenia chłodnicze oraz klimatyzacyjne. Po szkole można pracować w serwisie instalacji i utrzymaniu technicznym budynków.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+              "school_type_label": "Technikum nr 3",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ekonomia",
+      "description": "Finanse, handel, sprzedaż, księgowość i obsługa klienta.",
+      "profiles": [
+        {
+          "name": "sprzedawca",
+          "description": "Obsługuje klienta, prezentuje towar i prowadzi podstawowe działania sprzedażowe. Po nauce można pracować w handlu i usługach.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół nr 1 we Wrocławiu",
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 10",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik ekonomista",
+          "description": "Zajmuje się dokumentacją, finansami i podstawami organizacji firmy. Po szkole można pracować w biurze, księgowości, administracji lub handlu.",
+          "school_count": 3,
+          "schools": [
+            "Zespół Szkół Ekonomiczno-Administracyjnych we Wrocławiu",
+            "Zespół Szkół Ekonomiczno-Ogólnokształcących we Wrocławiu",
+            "Zespół Szkół nr 6 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Ekonomiczno-Administracyjnych we Wrocławiu",
+              "school_type_label": "Technikum nr 13",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Ekonomiczno-Ogólnokształcących we Wrocławiu",
+              "school_type_label": "Technikum nr 8",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 6 we Wrocławiu",
+              "school_type_label": "Technikum nr 14",
+              "education_type": "technikum",
+              "source_label": "Zespół Szkół nr 6 we Wrocławiu - oferta edukacyjna",
+              "source_url": "https://zs6.wroc.pl/strefa-ucznia/oferta-edukacyjna/",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik handlowiec",
+          "description": "Organizuje sprzedaż, kontakt z klientem i działania handlowe. Po szkole można pracować w firmach sprzedażowych, sklepach i działach obsługi.",
+          "school_count": 3,
+          "schools": [
+            "Zespół Szkół Ekonomiczno-Ogólnokształcących we Wrocławiu",
+            "Zespół Szkół nr 1 we Wrocławiu",
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Ekonomiczno-Ogólnokształcących we Wrocławiu",
+              "school_type_label": "Technikum nr 8",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+              "school_type_label": "Technikum nr 1",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Technikum nr 5",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik rachunkowości",
+          "description": "Prowadzi dokumentację finansową i księgową. Po szkole można pracować w biurze rachunkowym, księgowości lub administracji firmy.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół Ekonomiczno-Administracyjnych we Wrocławiu",
+            "Zespół Szkół nr 3 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Ekonomiczno-Administracyjnych we Wrocławiu",
+              "school_type_label": "Technikum nr 13",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+              "school_type_label": "Technikum nr 16",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "elektromobilność",
+      "description": "Pojazdy elektryczne, napędy, ładowanie i serwis.",
+      "profiles": [
+        {
+          "name": "kursy i szkolenia BCU: elektromobilność",
+          "description": "Szkolenia BCU związane z elektromobilnością, nowymi napędami i technologiami obsługi pojazdów elektrycznych.",
+          "school_count": 1,
+          "schools": [
+            "BCU w dziedzinie elektromobilności we Wrocławiu"
+          ],
+          "types": [
+            "kurs"
+          ],
+          "offerings": [
+            {
+              "school_name": "BCU w dziedzinie elektromobilności we Wrocławiu",
+              "school_type_label": "Branżowe Centrum Umiejętności",
+              "education_type": "kurs",
+              "source_label": "BCU Elektromobilność we Wrocławiu",
+              "source_url": "https://bcu2.wroclaw.pl/bcu/home.nsf/pl/index?open",
+              "verified_at": "2026-07-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "elektronika",
+      "description": "Układy elektroniczne, pomiary, montaż i serwis urządzeń.",
+      "profiles": [
+        {
+          "name": "elektronik",
+          "description": "Montuje, uruchamia i diagnozuje układy elektroniczne. Po nauce można pracować w serwisie urządzeń, produkcji lub automatyce.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 1",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik elektronik",
+          "description": "Projektuje, montuje i diagnozuje układy elektroniczne. Po szkole można pracować w serwisie, produkcji, automatyce lub telekomunikacji.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+            "Elektroniczne Zakłady Naukowe we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 10",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+              "school_type_label": "Technikum nr 7",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "elektryka",
+      "description": "Instalacje, pomiary, diagnostyka i bezpieczeństwo urządzeń.",
+      "profiles": [
+        {
+          "name": "kursy i szkolenia BCU: elektryka",
+          "description": "Szkolenia BCU dla osób rozwijających kompetencje w elektryce, pomiarach, diagnostyce i bezpieczeństwie instalacji.",
+          "school_count": 1,
+          "schools": [
+            "BCU nr 3 w dziedzinie elektryki we Wrocławiu"
+          ],
+          "types": [
+            "kurs"
+          ],
+          "offerings": [
+            {
+              "school_name": "BCU nr 3 w dziedzinie elektryki we Wrocławiu",
+              "school_type_label": "Branżowe Centrum Umiejętności",
+              "education_type": "kurs",
+              "source_label": "BCU Elektryka we Wrocławiu",
+              "source_url": "https://bcu.cpkz.edu.pl/",
+              "verified_at": "2026-07-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "energetyka",
+      "description": "Instalacje elektryczne, sieci, OZE i utrzymanie infrastruktury.",
+      "profiles": [
+        {
+          "name": "elektromechanik",
+          "description": "Łączy podstawy elektryki i mechaniki przy obsłudze maszyn oraz urządzeń. Po nauce można pracować w serwisie, produkcji lub utrzymaniu ruchu.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 3",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "elektryk",
+          "description": "Wykonuje i naprawia instalacje elektryczne oraz obsługuje urządzenia. Po nauce można pracować przy instalacjach, serwisie i utrzymaniu ruchu.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół nr 18 we Wrocławiu",
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 3",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik elektroenergetyk transportu szynowego",
+          "description": "Obsługuje urządzenia elektroenergetyczne związane z transportem szynowym. Po szkole można pracować przy infrastrukturze kolejowej i tramwajowej.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Logistycznych we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+              "school_type_label": "Technikum nr 12",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik elektryk",
+          "description": "Projektuje, wykonuje i nadzoruje instalacje oraz urządzenia elektryczne. Po szkole można pracować w energetyce, budownictwie i utrzymaniu ruchu.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+              "school_type_label": "Technikum nr 3",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik urządzeń i systemów energetyki odnawialnej",
+          "description": "Montuje i obsługuje instalacje OZE, np. fotowoltaiczne i grzewcze. Po szkole można pracować przy instalacjach, serwisie i doradztwie technicznym.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+              "school_type_label": "Technikum nr 3",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "florystyka",
+      "description": "Kompozycje roślinne, dekoracje, aranżacje i usługi.",
+      "profiles": [
+        {
+          "name": "kursy i szkolenia BCU: florystyka",
+          "description": "Szkolenia BCU związane z florystyką, aranżacją roślin, dekoracją przestrzeni i usługami florystycznymi.",
+          "school_count": 1,
+          "schools": [
+            "BCU w dziedzinie florystyki we Wrocławiu"
+          ],
+          "types": [
+            "kurs"
+          ],
+          "offerings": [
+            {
+              "school_name": "BCU w dziedzinie florystyki we Wrocławiu",
+              "school_type_label": "Branżowe Centrum Umiejętności",
+              "education_type": "kurs",
+              "source_label": "BCU Florystyka we Wrocławiu",
+              "source_url": "https://bcuflorystyka.pl/",
+              "verified_at": "2026-07-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gastronomia",
+      "description": "Kuchnia, wypieki, obsługa gości i organizacja lokalu.",
+      "profiles": [
+        {
+          "name": "cukiernik",
+          "description": "Przygotowuje ciasta, desery i wyroby cukiernicze. Po nauce można pracować w cukierni, piekarni, kawiarni lub własnej pracowni.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "kelner",
+          "description": "Obsługuje gości, przyjmuje zamówienia i współpracuje z kuchnią. Po nauce można pracować w restauracji, hotelu lub firmie cateringowej.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół Gastronomicznych we Wrocławiu",
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 9",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "kucharz",
+          "description": "Przygotowuje potrawy i organizuje pracę na stanowisku kuchennym. Po nauce można pracować w restauracji, hotelu, stołówce lub cateringu.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół Gastronomicznych we Wrocławiu",
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 9",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "piekarz",
+          "description": "Przygotowuje pieczywo i obsługuje proces wypieku. Po nauce można pracować w piekarni, zakładzie produkcyjnym lub własnej pracowni.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik żywienia i usług gastronomicznych",
+          "description": "Planuje żywienie, przygotowanie potraw i organizację usług gastronomicznych. Po szkole można pracować w gastronomii, cateringu i hotelarstwie.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół Gastronomicznych we Wrocławiu",
+            "Zespół Szkół nr 3 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+              "school_type_label": "Technikum nr 9",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+              "school_type_label": "Technikum nr 16",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "grafika i multimedia",
+      "description": "Fotografia, grafika, poligrafia i materiały cyfrowe.",
+      "profiles": [
+        {
+          "name": "fotograf",
+          "description": "Wykonuje zdjęcia, przygotowuje sprzęt i obrabia materiał. Po nauce można pracować w studiu, mediach, reklamie lub usługach.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik fotografii i multimediów",
+          "description": "Tworzy zdjęcia, materiały cyfrowe i proste formy multimedialne. Po szkole można pracować w studiu, reklamie, mediach lub usługach.",
+          "school_count": 1,
+          "schools": [
+            "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+              "school_type_label": "Technikum nr 15",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik grafiki i poligrafii cyfrowej",
+          "description": "Przygotowuje projekty graficzne i materiały do druku lub publikacji cyfrowej. Po szkole można pracować w drukarni, agencji lub dziale marketingu.",
+          "school_count": 1,
+          "schools": [
+            "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+              "school_type_label": "Technikum nr 15",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "informatyka",
+      "description": "Komputery, sieci, programowanie, systemy i usługi IT.",
+      "profiles": [
+        {
+          "name": "technik informatyk",
+          "description": "Konfiguruje komputery, sieci, systemy i podstawowe usługi IT. Po szkole można pracować w serwisie, administracji IT lub wsparciu technicznym.",
+          "school_count": 4,
+          "schools": [
+            "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+            "Elektroniczne Zakłady Naukowe we Wrocławiu",
+            "Zespół Szkół nr 8 we Wrocławiu",
+            "Zespół Szkół nr 1 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 10",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+              "school_type_label": "Technikum nr 1",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 8 we Wrocławiu",
+              "school_type_label": "Technikum nr 19",
+              "education_type": "technikum",
+              "source_label": "Zespół Szkół nr 8 we Wrocławiu - rekrutacja",
+              "source_url": "https://www.zs8.wroc.pl/rekrutacja-kandydaci-tech/",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+              "school_type_label": "Technikum nr 7",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik programista",
+          "description": "Tworzy i testuje aplikacje oraz proste systemy informatyczne. Po szkole można pracować przy programowaniu, testach lub wsparciu projektów IT.",
+          "school_count": 1,
+          "schools": [
+            "Elektroniczne Zakłady Naukowe we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 10",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik teleinformatyk",
+          "description": "Zajmuje się sieciami, usługami teleinformatycznymi i infrastrukturą łączności. Po szkole można pracować przy sieciach, serwisie i wsparciu IT.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+              "school_type_label": "Technikum nr 7",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "kształcenie praktyczne",
+      "description": "Staże, warsztaty i organizacja praktycznej nauki.",
+      "profiles": [
+        {
+          "name": "projekty stażowe i wsparcie kształcenia praktycznego",
+          "description": "Nie jest pojedynczym zawodem. Obejmuje organizację staży, warsztatów i praktycznej nauki we współpracy ze szkołami i pracodawcami.",
+          "school_count": 1,
+          "schools": [
+            "Centrum Placówek Kształcenia Zawodowego we Wrocławiu"
+          ],
+          "types": [
+            "kurs"
+          ],
+          "offerings": [
+            {
+              "school_name": "Centrum Placówek Kształcenia Zawodowego we Wrocławiu",
+              "school_type_label": "Centrum kształcenia sektorowego",
+              "education_type": "kurs",
+              "source_label": "Centrum Placówek Kształcenia Zawodowego we Wrocławiu",
+              "source_url": "https://cpkz.edu.pl/",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logistyka",
+      "description": "Transport, magazyny, spedycja i przepływ towarów.",
+      "profiles": [
+        {
+          "name": "kursy i szkolenia BCU: logistyka",
+          "description": "Szkolenia BCU rozwijające kompetencje w logistyce, magazynowaniu, transporcie i organizacji procesów.",
+          "school_count": 1,
+          "schools": [
+            "BCU w dziedzinie logistyki we Wrocławiu"
+          ],
+          "types": [
+            "kurs"
+          ],
+          "offerings": [
+            {
+              "school_name": "BCU w dziedzinie logistyki we Wrocławiu",
+              "school_type_label": "Branżowe Centrum Umiejętności",
+              "education_type": "kurs",
+              "source_label": "BCU Logistyka we Wrocławiu",
+              "source_url": "https://bcu-logistyka.pl/",
+              "verified_at": "2026-07-27"
+            }
+          ]
+        },
+        {
+          "name": "magazynier-logistyk",
+          "description": "Przyjmuje, składuje i wydaje towary oraz obsługuje dokumentację magazynową. Po nauce można pracować w magazynach i centrach dystrybucyjnych.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Logistycznych we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia",
+              "education_type": "bs_i",
+              "source_label": "Zespół Szkół Logistycznych we Wrocławiu",
+              "source_url": "https://www.logistyk-zsl.wroclaw.pl/",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik eksploatacji portów i terminali",
+          "description": "Organizuje obsługę ładunków, dokumentów i procesów terminalowych. Po szkole można pracować w logistyce, transporcie i centrach przeładunkowych.",
+          "school_count": 2,
+          "schools": [
+            "Lotnicze Zakłady Naukowe we Wrocławiu",
+            "Zespół Szkół Logistycznych we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 6",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+              "school_type_label": "Technikum nr 12",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik logistyk",
+          "description": "Planuje transport, magazynowanie i przepływ towarów. Po szkole można pracować w logistyce, spedycji, magazynach i centrach dystrybucji.",
+          "school_count": 2,
+          "schools": [
+            "Lotnicze Zakłady Naukowe we Wrocławiu",
+            "Zespół Szkół Logistycznych we Wrocławiu"
+          ],
+          "types": [
+            "technikum",
+            "bs_ii"
+          ],
+          "offerings": [
+            {
+              "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 6",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła II stopnia",
+              "education_type": "bs_ii",
+              "source_label": "Zespół Szkół Logistycznych we Wrocławiu",
+              "source_url": "https://www.logistyk-zsl.wroclaw.pl/",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+              "school_type_label": "Technikum nr 12",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik spedytor",
+          "description": "Organizuje przewóz towarów, dokumenty i kontakt z przewoźnikami. Po szkole można pracować w firmie spedycyjnej, logistycznej lub transportowej.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Logistycznych we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+              "school_type_label": "Technikum nr 12",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik transportu kolejowego",
+          "description": "Organizuje procesy związane z ruchem i transportem kolejowym. Po szkole można pracować u przewoźników i zarządców infrastruktury.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Logistycznych we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Logistycznych we Wrocławiu",
+              "school_type_label": "Technikum nr 12",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lotnictwo",
+      "description": "Obsługa techniczna lotnictwa i praca operacyjna lotnisk.",
+      "profiles": [
+        {
+          "name": "technik lotniskowych służb operacyjnych",
+          "description": "Wspiera organizację pracy lotniska i obsługę operacyjną. Po szkole można pracować w portach lotniczych i służbach obsługi.",
+          "school_count": 1,
+          "schools": [
+            "Lotnicze Zakłady Naukowe we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 6",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik mechanik lotniczy",
+          "description": "Obsługuje i wspiera utrzymanie techniczne statków powietrznych. Po szkole można pracować w organizacjach obsługi lotniczej.",
+          "school_count": 1,
+          "schools": [
+            "Lotnicze Zakłady Naukowe we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 6",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mechanika",
+      "description": "Maszyny, urządzenia, mechatronika, automatyka i obróbka.",
+      "profiles": [
+        {
+          "name": "mechanik-monter maszyn i urządzeń",
+          "description": "Montuje, demontuje i serwisuje maszyny oraz urządzenia. Po nauce można pracować w produkcji i utrzymaniu ruchu.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 3",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "mechatronik",
+          "description": "Łączy mechanikę, elektronikę i sterowanie. Po nauce można pracować przy maszynach, liniach produkcyjnych i systemach automatyki.",
+          "school_count": 1,
+          "schools": [
+            "Lotnicze Zakłady Naukowe we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 6",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "operator obrabiarek skrawających",
+          "description": "Obsługuje maszyny do obróbki metalu i przygotowuje elementy według dokumentacji. Po nauce można pracować w zakładach produkcyjnych.",
+          "school_count": 2,
+          "schools": [
+            "Lotnicze Zakłady Naukowe we Wrocławiu",
+            "Zespół Szkół nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 6",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 3",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "ślusarz",
+          "description": "Wykonuje i naprawia elementy metalowe, korzystając z narzędzi ręcznych i maszyn. Po nauce można pracować w warsztacie lub produkcji.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 3",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik automatyk",
+          "description": "Uruchamia i utrzymuje układy automatyki. Po szkole można pracować przy maszynach, liniach produkcyjnych i systemach sterowania.",
+          "school_count": 2,
+          "schools": [
+            "Lotnicze Zakłady Naukowe we Wrocławiu",
+            "Elektroniczne Zakłady Naukowe we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 10",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 6",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik mechanik",
+          "description": "Projektuje, obsługuje i naprawia maszyny oraz urządzenia. Po szkole można pracować w produkcji, serwisie i utrzymaniu ruchu.",
+          "school_count": 3,
+          "schools": [
+            "Zespół Szkół nr 2 we Wrocławiu",
+            "Lotnicze Zakłady Naukowe we Wrocławiu",
+            "Zespół Szkół nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 6",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+              "school_type_label": "Technikum nr 3",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+              "school_type_label": "Technikum nr 2",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik mechatronik",
+          "description": "Łączy mechanikę, elektronikę, automatykę i programowanie urządzeń. Po szkole można pracować przy maszynach, robotach i systemach produkcyjnych.",
+          "school_count": 4,
+          "schools": [
+            "Zespół Szkół nr 2 we Wrocławiu",
+            "Lotnicze Zakłady Naukowe we Wrocławiu",
+            "Elektroniczne Zakłady Naukowe we Wrocławiu",
+            "Zespół Szkół nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Elektroniczne Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 10",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Lotnicze Zakłady Naukowe we Wrocławiu",
+              "school_type_label": "Technikum nr 6",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 18 we Wrocławiu",
+              "school_type_label": "Technikum nr 3",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+              "school_type_label": "Technikum nr 2",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "moda",
+      "description": "Projektowanie, przygotowanie i wytwarzanie odzieży.",
+      "profiles": [
+        {
+          "name": "technik przemysłu mody",
+          "description": "Przygotowuje projekty, dokumentację i proces produkcji odzieży. Po szkole można pracować w firmach odzieżowych, pracowniach lub usługach.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 1 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+              "school_type_label": "Technikum nr 1",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "motoryzacja",
+      "description": "Pojazdy, diagnostyka, naprawy, lakiernictwo i eksploatacja.",
+      "profiles": [
+        {
+          "name": "blacharz samochodowy",
+          "description": "Naprawia i przygotowuje elementy karoserii pojazdów. Po nauce można pracować w warsztacie blacharskim, serwisie lub firmie napraw powypadkowych.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół nr 2 we Wrocławiu",
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "elektromechanik pojazdów samochodowych",
+          "description": "Diagnozuje i naprawia elektryczne oraz elektroniczne układy w pojazdach. Po nauce można pracować w serwisie samochodowym.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 2 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "kierowca mechanik",
+          "description": "Prowadzi pojazdy i zna podstawy ich obsługi technicznej. Po nauce można pracować w transporcie, logistyce lub serwisie flotowym.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 2 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "lakiernik samochodowy",
+          "description": "Przygotowuje powierzchnie i lakieruje pojazdy. Po nauce można pracować w warsztacie lakierniczym, serwisie lub firmie renowacyjnej.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół nr 2 we Wrocławiu",
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "mechanik motocyklowy",
+          "description": "Diagnozuje i naprawia motocykle oraz ich podzespoły. Po nauce można pracować w serwisie jednośladów lub warsztacie.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 2 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "mechanik pojazdów samochodowych",
+          "description": "Diagnozuje, obsługuje i naprawia pojazdy. Po nauce można pracować w warsztacie, serwisie lub stacji obsługi.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 2 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 2",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik pojazdów samochodowych",
+          "description": "Diagnozuje, obsługuje i organizuje naprawy pojazdów. Po szkole można pracować w serwisie, diagnostyce, warsztacie lub firmie flotowej.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 2 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 2 we Wrocławiu",
+              "school_type_label": "Technikum nr 2",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ochrona środowiska",
+      "description": "Pomiary, monitoring i dokumentacja ochrony środowiska.",
+      "profiles": [
+        {
+          "name": "technik ochrony środowiska",
+          "description": "Wykonuje pomiary i dokumentację dotyczącą środowiska. Po szkole można pracować w laboratoriach, administracji środowiskowej lub firmach usługowych.",
+          "school_count": 1,
+          "schools": [
+            "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+              "school_type_label": "Technikum nr 15",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ogrodnictwo",
+      "description": "Uprawa, pielęgnacja roślin i usługi zieleni.",
+      "profiles": [
+        {
+          "name": "technik ogrodnik",
+          "description": "Planuje i prowadzi uprawę roślin oraz pielęgnację terenów zieleni. Po szkole można pracować w ogrodnictwie, szkółkach i usługach zieleni.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół nr 3 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+              "school_type_label": "Technikum nr 16",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "reklama",
+      "description": "Promocja, kampanie, materiały reklamowe i obsługa klienta.",
+      "profiles": [
+        {
+          "name": "technik reklamy",
+          "description": "Przygotowuje działania promocyjne, materiały reklamowe i obsługę klienta. Po szkole można pracować w agencji, marketingu lub sprzedaży.",
+          "school_count": 4,
+          "schools": [
+            "Zespół Szkół Ekonomiczno-Administracyjnych we Wrocławiu",
+            "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+            "Zespół Szkół nr 6 we Wrocławiu",
+            "Zespół Szkół nr 1 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Technikum nr 15 im. Marii Skłodowskiej-Curie we Wrocławiu",
+              "school_type_label": "Technikum nr 15",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Ekonomiczno-Administracyjnych we Wrocławiu",
+              "school_type_label": "Technikum nr 13",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+              "school_type_label": "Technikum nr 1",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 6 we Wrocławiu",
+              "school_type_label": "Technikum nr 14",
+              "education_type": "technikum",
+              "source_label": "Zespół Szkół nr 6 we Wrocławiu - oferta edukacyjna",
+              "source_url": "https://zs6.wroc.pl/strefa-ucznia/oferta-edukacyjna/",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "robotyka",
+      "description": "Roboty, sterowanie, automatyka i systemy produkcyjne.",
+      "profiles": [
+        {
+          "name": "technik robotyk",
+          "description": "Pracuje z robotami, automatyką i systemami sterowania. Po szkole można pracować w produkcji, automatyce i utrzymaniu ruchu.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Teleinformatycznych i Elektronicznych we Wrocławiu",
+              "school_type_label": "Technikum nr 7",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rzemiosło i usługi",
+      "description": "Usługi praktyczne, klient, naprawa i wytwarzanie.",
+      "profiles": [
+        {
+          "name": "fryzjer",
+          "description": "Strzyże, pielęgnuje i stylizuje włosy oraz obsługuje klientów. Po nauce można pracować w salonie fryzjerskim albo rozwijać własną działalność.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "krawiec",
+          "description": "Szyje, poprawia i przygotowuje odzież na miarę lub według wzoru. Po nauce można pracować w pracowni, zakładzie odzieżowym lub usługach.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół nr 1 we Wrocławiu",
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół nr 1 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 10",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "stolarz",
+          "description": "Wykonuje, montuje i naprawia elementy z drewna oraz materiałów drewnopochodnych. Po nauce można pracować w stolarni, produkcji lub usługach.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "tapicer",
+          "description": "Wykonuje i odnawia obicia mebli oraz elementów wyposażenia. Po nauce można pracować w zakładzie tapicerskim, produkcji mebli lub renowacji.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "bs_i"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Branżowa Szkoła I stopnia nr 5",
+              "education_type": "bs_i",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik usług fryzjerskich",
+          "description": "Łączy umiejętności fryzjerskie z organizacją usług i obsługą klienta. Po szkole można pracować w salonie, prowadzić usługi lub rozwijać własną działalność.",
+          "school_count": 1,
+          "schools": [
+            "Zespół Szkół Zawodowych nr 5 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Zawodowych nr 5 we Wrocławiu",
+              "school_type_label": "Technikum nr 5",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "turystyka",
+      "description": "Podróże, hotelarstwo, obsługa gości i organizacja usług.",
+      "profiles": [
+        {
+          "name": "technik hotelarstwa",
+          "description": "Obsługuje gości i organizuje pracę obiektu hotelowego. Po szkole można pracować w hotelu, recepcji, turystyce lub usługach gościnnych.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół Gastronomicznych we Wrocławiu",
+            "Zespół Szkół nr 3 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+              "school_type_label": "Technikum nr 9",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+              "school_type_label": "Technikum nr 16",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik organizacji turystyki",
+          "description": "Planuje imprezy turystyczne i obsługuje klientów. Po szkole można pracować w biurach podróży, hotelach i usługach turystycznych.",
+          "school_count": 2,
+          "schools": [
+            "Zespół Szkół Gastronomicznych we Wrocławiu",
+            "Zespół Szkół nr 3 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Zespół Szkół Gastronomicznych we Wrocławiu",
+              "school_type_label": "Technikum nr 9",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            },
+            {
+              "school_name": "Zespół Szkół nr 3 we Wrocławiu",
+              "school_type_label": "Technikum nr 16",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - wyszukiwarka zawodów",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szukaj",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "zdrowie i usługi medyczne",
+      "description": "Usługi medyczne, optyczne, ortopedyczne i weterynaryjne.",
+      "profiles": [
+        {
+          "name": "technik optyki okularowej",
+          "description": "Dobiera, wykonuje i naprawia okulary oraz pomoce optyczne. Po szkole można pracować w salonie optycznym lub pracowni.",
+          "school_count": 1,
+          "schools": [
+            "Technikum nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Technikum nr 18 we Wrocławiu",
+              "school_type_label": "Technikum nr 18",
+              "education_type": "technikum",
+              "source_label": "Technikum nr 18 we Wrocławiu - rekrutacja",
+              "source_url": "https://www.t18.wroclaw.pl/dlauczniow/rekrutacja",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik ortopeda",
+          "description": "Wykonuje i dopasowuje zaopatrzenie ortopedyczne. Po szkole można pracować w pracowniach ortopedycznych i placówkach zaopatrzenia medycznego.",
+          "school_count": 1,
+          "schools": [
+            "Technikum nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Technikum nr 18 we Wrocławiu",
+              "school_type_label": "Technikum nr 18",
+              "education_type": "technikum",
+              "source_label": "Kuratorium Oświaty we Wrocławiu - Technikum nr 18",
+              "source_url": "https://zawody.kuratorium.wroclaw.pl/szkola/271741",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "name": "technik weterynarii",
+          "description": "Wspiera lekarza weterynarii, opiekę nad zwierzętami i czynności pomocnicze. Po szkole można pracować w lecznicach, hodowlach i usługach dla zwierząt.",
+          "school_count": 1,
+          "schools": [
+            "Technikum nr 18 we Wrocławiu"
+          ],
+          "types": [
+            "technikum"
+          ],
+          "offerings": [
+            {
+              "school_name": "Technikum nr 18 we Wrocławiu",
+              "school_type_label": "Technikum nr 18",
+              "education_type": "technikum",
+              "source_label": "Technikum nr 18 we Wrocławiu - rekrutacja",
+              "source_url": "https://www.t18.wroclaw.pl/dlauczniow/rekrutacja",
+              "verified_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "title": "Publiczna oferta powinna być czytelna także dla newcomers",
+      "area": "dostępność informacji",
+      "branch": "przekrojowe",
+      "insight": "W prototypie mapy oferty przewidziano odbiorców: uczeń, rodzic, newcomer, dorosły i pracodawca oraz wersje językowe PL/EN/UK. W publicznej stronie warto utrzymać prosty język, filtry ścieżek i możliwość późniejszego dodania tłumaczeń.",
+      "source_label": "lokalny prototyp: mapa oferty"
+    },
+    {
+      "title": "Oferta powinna pokazywać zawody z perspektywy pracodawcy",
+      "area": "współpraca z pracodawcami",
+      "branch": "przekrojowe",
+      "insight": "Struktura prototypu zawierała osobne pola dla praktyk, staży, wymagań pracodawcy i powiązanych zawodów. Dlatego publiczna oferta powinna łączyć szkołę, zawód, branżę i potencjalne miejsce praktycznej nauki.",
+      "source_label": "lokalny prototyp: mapa oferty"
+    },
+    {
+      "title": "Kierunki muszą mieć datę weryfikacji i link do źródła",
+      "area": "jakość danych",
+      "branch": "przekrojowe",
+      "insight": "W lokalnym prototypie część danych była oznaczona jako wymagająca potwierdzenia. Dlatego każde publiczne pole oferty w portalu ma źródło i datę weryfikacji.",
+      "source_label": "lokalny prototyp: mapa oferty"
+    },
+    {
+      "title": "W opisie oferty trzeba rozdzielać typ szkoły od organizacji praktyki",
+      "area": "praktyczna nauka zawodu",
+      "branch": "przekrojowe",
+      "insight": "Dla czytelności publicznej strony typ ścieżki, np. technikum, BS I, BS II lub kurs, powinien być osobnym filtrem. Model dualny, warsztaty szkolne i praktyki u pracodawców należy opisywać jako cechy organizacji kształcenia, a nie jako typ szkoły.",
+      "source_label": "lokalny prototyp: mapa oferty"
+    }
+  ]
+}
