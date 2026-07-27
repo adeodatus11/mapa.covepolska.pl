@@ -208,6 +208,40 @@ function branchName(value) {
   return state.lang === "pl" ? value : BRANCH_LABELS[state.lang]?.[value] || value;
 }
 
+const branchIcons = {
+  "analityka": "▦",
+  "architektura krajobrazu": "♧",
+  "automatyka przemysłowa": "⚙",
+  "budownictwo": "▧",
+  "chłodnictwo i klimatyzacja": "❄",
+  "ekonomia": "¤",
+  "elektromobilność": "↯",
+  "elektronika": "◌",
+  "elektryka": "⚡",
+  "energetyka": "☀",
+  "florystyka": "✿",
+  "gastronomia": "◍",
+  "grafika i multimedia": "▣",
+  "informatyka": "{ }",
+  "kształcenie praktyczne": "◧",
+  "logistyka": "↔",
+  "lotnictwo": "✈",
+  "mechanika": "⚙",
+  "moda": "✂",
+  "motoryzacja": "◉",
+  "ochrona środowiska": "♻",
+  "ogrodnictwo": "☘",
+  "reklama": "◆",
+  "robotyka": "⊡",
+  "rzemiosło i usługi": "◇",
+  "turystyka": "⌖",
+  "zdrowie i usługi medyczne": "✚"
+};
+
+function branchIcon(value) {
+  return branchIcons[value] || "○";
+}
+
 function branchDescription(branch) {
   return state.lang === "pl" ? branch.description : BRANCH_DESCRIPTIONS[state.lang]?.[branch.name] || branch.description;
 }
@@ -309,33 +343,47 @@ function applyShell() {
 
 function renderBranches() {
   const target = document.querySelector("#page-content");
-  target.innerHTML = state.data.branch_map.map((branch) => {
+  target.innerHTML = `
+    <div class="branch-tile-grid">
+      ${state.data.branch_map.map((branch) => {
     const schools = new Set(branch.profiles.flatMap((profile) => profile.schools || []));
     return `
-      <article class="info-card branch-info-card">
-        <div class="info-card-heading">
-          <div>
-            <h2>${escapeHtml(branchName(branch.name))}</h2>
-            <p>${escapeHtml(branchDescription(branch))}</p>
+      <details class="info-card branch-info-card" name="branch-tiles">
+        <summary>
+          <span class="branch-icon" aria-hidden="true">${escapeHtml(branchIcon(branch.name))}</span>
+          <span class="branch-summary-copy">
+            <span class="branch-title">${escapeHtml(branchName(branch.name))}</span>
+            <span class="branch-short-description">${escapeHtml(branchDescription(branch))}</span>
+          </span>
+          <span class="branch-open-indicator" aria-hidden="true"></span>
+        </summary>
+        <div class="branch-expanded-content">
+          <div class="info-card-heading">
+            <div>
+              <h2>${escapeHtml(branchName(branch.name))}</h2>
+              <p>${escapeHtml(branchDescription(branch))}</p>
+            </div>
+            <a href="${escapeHtml(mapUrl({ branch: branch.name }))}">${escapeHtml(c("showOnMap"))}</a>
           </div>
-          <a href="${escapeHtml(mapUrl({ branch: branch.name }))}">${escapeHtml(c("showOnMap"))}</a>
+          <div class="info-metrics">
+            <span>${branch.profiles.length} ${escapeHtml(c("profiles").toLowerCase())}</span>
+            <span>${schools.size} ${escapeHtml(c("schoolCount"))}</span>
+          </div>
+          <div class="specialisation-list">
+            ${branch.profiles.map((profile) => `
+              <section>
+                <h3>${escapeHtml(profileName(profile.name))}</h3>
+                <p>${escapeHtml(profileDescription(profile, branch.name))}</p>
+                <small>${escapeHtml((profile.schools || []).join(", "))}</small>
+              </section>
+            `).join("")}
+          </div>
         </div>
-        <div class="info-metrics">
-          <span>${branch.profiles.length} ${escapeHtml(c("profiles").toLowerCase())}</span>
-          <span>${schools.size} ${escapeHtml(c("schoolCount"))}</span>
-        </div>
-        <div class="specialisation-list">
-          ${branch.profiles.map((profile) => `
-            <section>
-              <h3>${escapeHtml(profileName(profile.name))}</h3>
-              <p>${escapeHtml(profileDescription(profile, branch.name))}</p>
-              <small>${escapeHtml((profile.schools || []).join(", "))}</small>
-            </section>
-          `).join("")}
-        </div>
-      </article>
+      </details>
     `;
-  }).join("");
+  }).join("")}
+    </div>
+  `;
 }
 
 function renderPathways() {

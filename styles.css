@@ -1093,12 +1093,126 @@ h1 {
   padding-bottom: 32px;
 }
 
+.branch-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
 .info-card {
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--white);
   padding: 18px;
   box-shadow: var(--shadow);
+}
+
+.branch-info-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.branch-info-card[open] {
+  grid-column: 1 / -1;
+}
+
+.branch-info-card summary {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 18px;
+  gap: 12px;
+  align-items: start;
+  min-height: 184px;
+  padding: 16px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.branch-info-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.branch-info-card summary:focus-visible {
+  outline: 3px solid rgba(47, 125, 181, 0.35);
+  outline-offset: -3px;
+}
+
+.branch-info-card[open] summary {
+  min-height: auto;
+  border-bottom: 1px solid var(--line);
+  background: #f8fbfd;
+}
+
+.branch-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--sky);
+  color: var(--navy);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.branch-summary-copy {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.branch-title {
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+.branch-short-description {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.branch-open-indicator {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+}
+
+.branch-open-indicator::before,
+.branch-open-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 3px;
+  width: 12px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--navy);
+}
+
+.branch-open-indicator::after {
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.branch-info-card[open] .branch-open-indicator::after {
+  transform: rotate(0deg);
+}
+
+.branch-expanded-content {
+  padding: 18px;
+}
+
+.branch-info-card:not([open]) .branch-expanded-content {
+  display: none;
 }
 
 .info-card-heading,
