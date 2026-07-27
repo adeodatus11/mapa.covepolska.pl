@@ -348,7 +348,7 @@ function renderBranches() {
       ${state.data.branch_map.map((branch) => {
     const schools = new Set(branch.profiles.flatMap((profile) => profile.schools || []));
     return `
-      <details class="info-card branch-info-card" name="branch-tiles">
+      <details class="info-card branch-info-card">
         <summary>
           <span class="branch-icon" aria-hidden="true">${escapeHtml(branchIcon(branch.name))}</span>
           <span class="branch-summary-copy">
@@ -358,25 +358,27 @@ function renderBranches() {
           <span class="branch-open-indicator" aria-hidden="true"></span>
         </summary>
         <div class="branch-expanded-content">
-          <div class="info-card-heading">
-            <div>
-              <h2>${escapeHtml(branchName(branch.name))}</h2>
-              <p>${escapeHtml(branchDescription(branch))}</p>
+          <div class="branch-expanded-inner">
+            <div class="info-card-heading">
+              <div>
+                <h2>${escapeHtml(branchName(branch.name))}</h2>
+                <p>${escapeHtml(branchDescription(branch))}</p>
+              </div>
+              <a href="${escapeHtml(mapUrl({ branch: branch.name }))}">${escapeHtml(c("showOnMap"))}</a>
             </div>
-            <a href="${escapeHtml(mapUrl({ branch: branch.name }))}">${escapeHtml(c("showOnMap"))}</a>
-          </div>
-          <div class="info-metrics">
-            <span>${branch.profiles.length} ${escapeHtml(c("profiles").toLowerCase())}</span>
-            <span>${schools.size} ${escapeHtml(c("schoolCount"))}</span>
-          </div>
-          <div class="specialisation-list">
-            ${branch.profiles.map((profile) => `
-              <section>
-                <h3>${escapeHtml(profileName(profile.name))}</h3>
-                <p>${escapeHtml(profileDescription(profile, branch.name))}</p>
-                <small>${escapeHtml((profile.schools || []).join(", "))}</small>
-              </section>
-            `).join("")}
+            <div class="info-metrics">
+              <span>${branch.profiles.length} ${escapeHtml(c("profiles").toLowerCase())}</span>
+              <span>${schools.size} ${escapeHtml(c("schoolCount"))}</span>
+            </div>
+            <div class="specialisation-list">
+              ${branch.profiles.map((profile) => `
+                <section>
+                  <h3>${escapeHtml(profileName(profile.name))}</h3>
+                  <p>${escapeHtml(profileDescription(profile, branch.name))}</p>
+                  <small>${escapeHtml((profile.schools || []).join(", "))}</small>
+                </section>
+              `).join("")}
+            </div>
           </div>
         </div>
       </details>
@@ -384,6 +386,100 @@ function renderBranches() {
   }).join("")}
     </div>
   `;
+  setupBranchTileInteractions(target);
+}
+
+function setupBranchTileInteractions(target) {
+  const tiles = [...target.querySelectorAll(".branch-info-card")];
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  tiles.forEach((tile) => {
+    const summary = tile.querySelector("summary");
+    const content = tile.querySelector(".branch-expanded-content");
+    if (!summary || !content) return;
+
+    content.style.maxHeight = "0px";
+    content.style.opacity = "0";
+
+    summary.addEventListener("click", (event) => {
+      event.preventDefault();
+      const isExpanded = tile.open && tile.classList.contains("is-expanded");
+
+      if (isExpanded) {
+        closeBranchTile(tile, reduceMotion);
+        return;
+      }
+
+      tiles.forEach((otherTile) => {
+        if (otherTile !== tile && otherTile.open) closeBranchTile(otherTile, reduceMotion);
+      });
+      openBranchTile(tile, reduceMotion);
+    });
+  });
+}
+
+function openBranchTile(tile, reduceMotion) {
+  const content = tile.querySelector(".branch-expanded-content");
+  if (!content) return;
+
+  window.clearTimeout(tile.branchAnimationTimer);
+  tile.open = true;
+  tile.classList.remove("is-collapsing");
+  tile.classList.add("is-expanded");
+
+  if (reduceMotion) {
+    content.style.maxHeight = "none";
+    content.style.opacity = "1";
+    return;
+  }
+
+  content.style.maxHeight = "0px";
+  content.style.opacity = "0";
+
+  window.requestAnimationFrame(() => {
+    content.style.maxHeight = `${content.scrollHeight}px`;
+    content.style.opacity = "1";
+  });
+
+  tile.branchAnimationTimer = window.setTimeout(() => {
+    if (!tile.open || !tile.classList.contains("is-expanded")) return;
+    content.style.maxHeight = "none";
+    const rect = tile.getBoundingClientRect();
+    if (rect.top < 90 || rect.bottom > window.innerHeight) {
+      tile.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }, 520);
+}
+
+function closeBranchTile(tile, reduceMotion) {
+  const content = tile.querySelector(".branch-expanded-content");
+  if (!content) return;
+
+  window.clearTimeout(tile.branchAnimationTimer);
+  tile.classList.remove("is-expanded");
+  tile.classList.add("is-collapsing");
+
+  if (reduceMotion) {
+    tile.open = false;
+    tile.classList.remove("is-collapsing");
+    content.style.maxHeight = "0px";
+    content.style.opacity = "0";
+    return;
+  }
+
+  content.style.maxHeight = `${content.scrollHeight}px`;
+  content.style.opacity = "1";
+
+  window.requestAnimationFrame(() => {
+    content.style.maxHeight = "0px";
+    content.style.opacity = "0";
+  });
+
+  tile.branchAnimationTimer = window.setTimeout(() => {
+    if (!tile.classList.contains("is-collapsing")) return;
+    tile.open = false;
+    tile.classList.remove("is-collapsing");
+  }, 430);
 }
 
 function renderPathways() {
