@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wrocław Talent Explorer - Mapa szkolnictwa sektorowego we Wrocławiu</title>
+    <meta name="description" content="Wrocław Talent Explorer: miejskie narzędzie doradztwa zawodowego łączące istniejące zasoby z lokalnymi branżami, szkołami i pracodawcami.">
+    <link rel="icon" href="assets/map-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="talent-explorer.css">
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body data-page="talent">
+    <header class="site-header">
+      <div class="header-brand-row">
+        <a class="brand" href="./" aria-label="Mapa szkolnictwa sektorowego we Wrocławiu">
+          <img src="assets/map-logo.png" alt="Mapa szkolnictwa zawodowego" class="brand-logo">
+        </a>
+        <div class="header-logos" aria-label="Projekt i finansowanie">
+          <a class="logo-slot small" href="https://win4smes.eu/" target="_blank" rel="noopener" aria-label="WIN4SMEs">
+            <img src="assets/win4smes-tight.png" alt="WIN4SMEs">
+          </a>
+          <a class="logo-slot wide" href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" target="_blank" rel="noopener" aria-label="Dofinansowane przez Unię Europejską">
+            <img src="assets/eu-cofunded-pl-tight.png" alt="Dofinansowane przez Unię Europejską">
+          </a>
+        </div>
+      </div>
+      <details class="menu-dropdown">
+        <summary aria-label="Otwórz menu"><span></span><span></span><span></span></summary>
+        <nav class="top-actions" aria-label="Główne linki">
+          <a href="./">Mapa</a>
+          <a href="./branze.html">Branże</a>
+          <a href="./sciezki.html">Ścieżki</a>
+          <a href="./szkoly.html">Szkoły</a>
+          <a href="./talent-explorer.html" aria-current="page">Talent Explorer</a>
+        </nav>
+      </details>
+    </header>
+
+    <main class="te-page">
+      <!-- HERO -->
+      <section class="te-hero" aria-labelledby="te-title">
+        <div class="te-hero-copy">
+          <p class="service-label">Koncepcja projektu · COVE Polska · Wrocław</p>
+          <h1 id="te-title">Wrocław <span>Talent&nbsp;Explorer</span></h1>
+          <p class="lead">
+            Miejskie narzędzie doradztwa zawodowego dla uczniów klas VII–VIII. Nie jest kolejnym testem
+            predyspozycji ani kolejną bazą opisów zawodów. Łączy to, co już istnieje, z realną gospodarką,
+            szkołami i pracodawcami Wrocławia.
+          </p>
+          <blockquote class="te-question">
+            „Jakie możliwości zawodowe i edukacyjne istnieją wokół mnie, we Wrocławiu,
+            i jak mogę je realnie poznać?”
+          </blockquote>
+          <div class="te-hero-actions">
+            <a class="path-cta" href="#mapa-branz">Zobacz Mapę Branż</a>
+            <a class="te-ghost" href="#sciezka">Ścieżka ucznia</a>
+          </div>
+        </div>
+        <ol class="te-hero-flow" aria-label="Ścieżka użytkownika">
+          <li>poznaj siebie</li>
+          <li>poznaj branże</li>
+          <li>poznaj zawody</li>
+          <li>zobacz możliwości we Wrocławiu</li>
+          <li>poznaj szkoły</li>
+          <li>poznaj pracodawców</li>
+          <li>doświadcz zawodu</li>
+          <li>zaplanuj kolejny krok</li>
+        </ol>
+      </section>
+
+      <nav class="te-subnav" aria-label="Spis treści strony">
+        <a href="#problem">Problem</a>
+        <a href="#zasada">Zasada</a>
+        <a href="#sciezka">Ścieżka ucznia</a>
+        <a href="#mapa-branz">Mapa Branż</a>
+        <a href="#funkcje">9 funkcji</a>
+        <a href="#doradca">Doradca</a>
+        <a href="#decyzja">Decyzja</a>
+        <a href="#etapy">Etapy</a>
+      </nav>
+
+      <!-- PROBLEM -->
+      <section class="te-section" id="problem" aria-labelledby="problem-title">
+        <div class="te-heading">
+          <p class="te-kicker">Dlaczego</p>
+          <h2 id="problem-title">Wybór szkoły zapada przy bardzo ograniczonej wiedzy</h2>
+        </div>
+        <div class="te-split">
+          <ul class="te-problems">
+            <li>Uczeń zna bardzo niewiele zawodów.</li>
+            <li>Nie rozumie struktury współczesnej gospodarki.</li>
+            <li>Nie wie, jakie firmy działają w jego własnym mieście.</li>
+            <li>Nie potrafi połączyć zainteresowań z konkretną ścieżką edukacyjną.</li>
+            <li>Decyzję o szkole podejmuje na podstawie niewielu informacji.</li>
+          </ul>
+          <div class="te-outcome">
+            <h3>Cel: uczeń, który po pracy z narzędziem mówi</h3>
+            <ul>
+              <li>Wiem, jakie obszary mnie interesują.</li>
+              <li>Wiem, jakie zawody w nich istnieją.</li>
+              <li>Wiem, gdzie można się ich nauczyć we Wrocławiu.</li>
+              <li>Wiem, gdzie ludzie wykonują taką pracę.</li>
+              <li>Zobaczyłem część z nich w praktyce.</li>
+              <li>Wiem, jaki będzie mój kolejny krok.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ZASADA -->
+      <section class="te-section" id="zasada" aria-labelledby="zasada-title">
+        <div class="te-heading">
+          <p class="te-kicker">Zasada projektowa</p>
+          <h2 id="zasada-title">Nie tworzymy od nowa informacji, które już istnieją. Łączymy je, upraszczamy i osadzamy we Wrocławiu.</h2>
+        </div>
+        <div class="te-layers">
+          <div class="te-layer te-layer-existing">
+            <h3>Co już istnieje w Polsce</h3>
+            <p>Nie kopiujemy. Linkujemy i korzystamy z tego, co dobre.</p>
+            <ul class="te-chips">
+              <li>Mapa Karier</li>
+              <li>Kompas Szkolnictwa Branżowego</li>
+              <li>INFOdoradca+</li>
+              <li>INFOZAWODOWE</li>
+              <li>Zintegrowana Platforma Edukacyjna</li>
+              <li>Materiały ORE</li>
+              <li>Barometr Zawodów</li>
+              <li>MOWAZ</li>
+              <li>Kuratorium Oświaty</li>
+              <li>Dane o lokalnej gospodarce</li>
+            </ul>
+          </div>
+          <div class="te-arrow" aria-hidden="true">→</div>
+          <div class="te-layer te-layer-local">
+            <h3>Lokalna warstwa Wrocławia</h3>
+            <p>Tu powstaje wartość dodana. Tam, gdzie dziś jest luka:</p>
+            <ul class="te-gaps">
+              <li><strong>Lokalna mapa branż</strong> w języku zrozumiałym dla 13–15-latka</li>
+              <li><strong>Zawód ↔ gospodarka Wrocławia</strong>: kto tu zatrudnia</li>
+              <li><strong>Zawód ↔ szkoła ↔ pracodawca</strong> w jednym miejscu</li>
+              <li><strong>Możliwość doświadczenia zawodu</strong>: warsztaty, wizyty, VR</li>
+              <li><strong>Prowadzenie ucznia</strong> przez cały proces wyboru</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCIEZKA -->
+      <section class="te-section" id="sciezka" aria-labelledby="sciezka-title">
+        <div class="te-heading">
+          <p class="te-kicker">Model procesu</p>
+          <h2 id="sciezka-title">Siedem pytań, które prowadzą ucznia od „kim jestem” do „co robię dalej”</h2>
+          <p>Wybierz krok, aby zobaczyć, co w nim się dzieje i na jakich zasobach się opiera.</p>
+        </div>
+
+        <div class="te-journey">
+          <div class="te-steps" role="tablist" aria-label="Kroki ścieżki ucznia" aria-orientation="vertical">
+            <button type="button" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true"><b>1</b><span>Kim jestem?</span></button>
+            <button type="button" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false"><b>2</b><span>Co istnieje?</span></button>
+            <button type="button" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false"><b>3</b><span>Co można tam robić?</span></button>
+            <button type="button" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false"><b>4</b><span>Czy to istnieje we Wrocławiu?</span></button>
+            <button type="button" role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false"><b>5</b><span>Jak mogę się tego nauczyć?</span></button>
+            <button type="button" role="tab" id="tab-6" aria-controls="panel-6" aria-selected="false"><b>6</b><span>Czy mogę tego spróbować?</span></button>
+            <button type="button" role="tab" id="tab-7" aria-controls="panel-7" aria-selected="false"><b>7</b><span>Co zrobię dalej?</span></button>
+          </div>
+
+          <div class="te-panels">
+            <article class="te-panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+              <p class="te-status planned">Planowane</p>
+              <h3>Kim jestem?</h3>
+              <p class="te-panel-sub">Zainteresowania, preferencje, mocne strony.</p>
+              <p>Uczeń porządkuje, co go ciekawi i jak lubi działać: z ludźmi, technologią, maszynami, informacją czy materiałem; samodzielnie czy w zespole; kreatywnie czy praktycznie.</p>
+              <ul class="te-bullets">
+                <li>Krótkie ankiety samooceny i elementy modelu RIASEC.</li>
+                <li>Wykorzystanie istniejących narzędzi doradztwa, bez własnego testu psychometrycznego.</li>
+                <li>Wynik: prosty profil zainteresowań i preferencji, <strong>a nie diagnoza psychologiczna</strong>.</li>
+              </ul>
+            </article>
+            <article class="te-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2">
+              <p class="te-status partial">Częściowo dostępne</p>
+              <h3>Co istnieje?</h3>
+              <p class="te-panel-sub">Poznanie świata branż.</p>
+              <p>Zanim uczeń zobaczy konkretne zawody, poznaje szerokie obszary gospodarki: od IT i przemysłu, przez zdrowie i gastronomię, po kulturę i naukę.</p>
+              <ul class="te-bullets">
+                <li>Każda branża: czym się zajmuje, jakie ma zawody, kompetencje i technologie, jak może się zmieniać.</li>
+                <li>Język dostosowany do wieku 13–15 lat, oparty na istniejących klasyfikacjach branżowych.</li>
+              </ul>
+              <a class="te-link" href="#mapa-branz">Zobacz działającą Mapę Branż →</a>
+            </article>
+            <article class="te-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3">
+              <p class="te-status partial">Częściowo dostępne</p>
+              <h3>Co można tam robić?</h3>
+              <p class="te-panel-sub">Poznanie zawodów.</p>
+              <p>Opisy zawodów już istnieją. Nie piszemy ich od nowa, tylko linkujemy do sprawdzonych źródeł i dodajemy warstwę lokalną.</p>
+              <ul class="te-bullets">
+                <li>Źródła: Mapa Karier, INFOdoradca+, Kompas Szkolnictwa Branżowego, ZPE, INFOZAWODOWE.</li>
+                <li>Warstwa lokalna: gdzie zawód można zdobyć, jakie kwalifikacje do niego prowadzą, kto zatrudnia, gdzie go zobaczyć w praktyce.</li>
+              </ul>
+              <a class="te-link" href="./branze.html">Profile i zawody w branżach →</a>
+            </article>
+            <article class="te-panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4">
+              <p class="te-status planned">Planowane</p>
+              <h3>Czy to istnieje we Wrocławiu?</h3>
+              <p class="te-panel-sub">Lokalne firmy, sektory gospodarki, rynek pracy.</p>
+              <p>Jeden z dwóch głównych wyróżników projektu. Uczeń ma zobaczyć: „taki typ pracy naprawdę istnieje w moim mieście”. Bez rankingu firm.</p>
+              <ul class="te-bullets">
+                <li>Sektory gospodarki, przykładowi pracodawcy, obszary rozwoju miasta.</li>
+                <li>Możliwe źródła: Agencja Rozwoju Aglomeracji Wrocławskiej, Invest in Wroclaw, Barometr Zawodów, dane miejskie, partnerzy COVE, izby gospodarcze i rzemieślnicze.</li>
+              </ul>
+            </article>
+            <article class="te-panel" role="tabpanel" id="panel-5" aria-labelledby="tab-5">
+              <p class="te-status partial">Częściowo dostępne</p>
+              <h3>Jak mogę się tego nauczyć?</h3>
+              <p class="te-panel-sub">Szkoły i ścieżki edukacyjne.</p>
+              <p>Od zawodu do odpowiedzi „gdzie i jak”: branża → zawód → szkoła → kierunek → kwalifikacje → dalsze możliwości.</p>
+              <ul class="te-bullets">
+                <li>Technika, branżowe szkoły I i II stopnia, kwalifikacyjne kursy zawodowe, BCU.</li>
+                <li>W kolejnych etapach: licea powiązane ze ścieżką, uczelnie, dane MOWAZ i miejskich systemów rekrutacji.</li>
+              </ul>
+              <a class="te-link" href="./">Otwórz mapę szkół i profili →</a>
+            </article>
+            <article class="te-panel" role="tabpanel" id="panel-6" aria-labelledby="tab-6">
+              <p class="te-status planned">Planowane</p>
+              <h3>Czy mogę tego spróbować?</h3>
+              <p class="te-panel-sub">Doświadcz zawodu.</p>
+              <p>Drugi główny wyróżnik. Uczeń nie kończy na przeczytaniu opisu. Funkcja „Spróbuj tego zawodu” pokaże konkretne wydarzenia we Wrocławiu.</p>
+              <ul class="te-bullets">
+                <li>Warsztaty, dni otwarte, wizyty studyjne, zajęcia próbne, pokazy zawodów, wydarzenia branżowe.</li>
+                <li>Laboratoria, materiały VR i filmy ze środowiska pracy.</li>
+                <li>Spotkania z pracownikami i z uczniami szkół zawodowych.</li>
+              </ul>
+            </article>
+            <article class="te-panel" role="tabpanel" id="panel-7" aria-labelledby="tab-7">
+              <p class="te-status planned">Planowane</p>
+              <h3>Co zrobię dalej?</h3>
+              <p class="te-panel-sub">Indywidualny plan następnych kroków.</p>
+              <p>Proces kończy się planem, a nie jednym „idealnym zawodem”: 2–4 branże, kilka zawodów, kilka szkół i konkretne działania do wykonania.</p>
+              <ul class="te-bullets">
+                <li>Lista rzeczy do sprawdzenia, odwiedzenia i wypróbowania.</li>
+                <li>Możliwość pracy z doradcą zawodowym nad zapisanym planem.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAPA BRANZ -->
+      <section class="te-section te-map" id="mapa-branz" aria-labelledby="mapa-title">
+        <div class="te-heading">
+          <p class="te-kicker">Kluczowy produkt</p>
+          <h2 id="mapa-title">Mapa Branż Wrocławia</h2>
+          <p>
+            Interaktywna mapa świata pracy: <strong>Wrocław → branże → zawody → firmy → szkoły → wydarzenia → doświadczenie zawodu</strong>.
+            Poniżej działający podgląd. Branże, zawody i szkoły pochodzą z rzeczywistych danych tej mapy
+            (Kuratorium Oświaty we Wrocławiu, stan na <span id="te-verified">…</span>).
+            Pozostałe warstwy są oznaczone jako planowane.
+          </p>
+        </div>
+
+        <div class="te-explorer">
+          <div class="te-areas" id="te-areas" role="listbox" aria-label="Obszary gospodarki" aria-orientation="vertical">
+            <p class="te-loading">Ładowanie danych…</p>
+          </div>
+          <div class="te-area-detail" id="te-area-detail" aria-live="polite">
+            <p class="te-loading">Wybierz obszar po lewej stronie.</p>
+          </div>
+        </div>
+        <p class="te-note">Obszary są pogrupowane w języku zrozumiałym dla ucznia i przypisane do branż z mapy szkolnictwa. Liczby dotyczą oferty szkół zawodowych i BCU, nie wszystkich miejsc pracy.</p>
+      </section>
+
+      <!-- 9 FUNKCJI -->
+      <section class="te-section" id="funkcje" aria-labelledby="funkcje-title">
+        <div class="te-heading">
+          <p class="te-kicker">Zakres</p>
+          <h2 id="funkcje-title">Dziewięć funkcji Wrocław Talent Explorer</h2>
+          <p>Statusy pokazują uczciwie, co jest już w mapie, a co dopiero ma powstać.</p>
+        </div>
+        <div class="te-roles">
+          <article class="te-role">
+            <header><b>1</b><span class="te-status planned">Planowane</span></header>
+            <h3>Poznaj siebie</h3>
+            <small>Self-discovery</small>
+            <p>Profil zainteresowań i preferencji na bazie istniejących narzędzi i krótkich ankiet. Bez diagnozy psychologicznej.</p>
+          </article>
+          <article class="te-role">
+            <header><b>2</b><span class="te-status partial">Częściowo</span></header>
+            <h3>Poznaj branże</h3>
+            <small>Explore industries</small>
+            <p>Mapa Branż Wrocławia: szerokie obszary gospodarki opisane językiem 13–15-latka.</p>
+          </article>
+          <article class="te-role">
+            <header><b>3</b><span class="te-status partial">Częściowo</span></header>
+            <h3>Poznaj zawody</h3>
+            <small>Explore professions</small>
+            <p>Linki do Mapy Karier, INFOdoradca+, Kompasu i ZPE plus lokalna warstwa: szkoły, kwalifikacje, pracodawcy.</p>
+          </article>
+          <article class="te-role">
+            <header><b>4</b><span class="te-status planned">Planowane</span></header>
+            <h3>Poznaj lokalny rynek pracy</h3>
+            <small>Explore Wrocław economy</small>
+            <p>Sektory, przykładowi pracodawcy i obszary rozwoju miasta. Dowód, że „taka praca naprawdę istnieje”.</p>
+          </article>
+          <article class="te-role">
+            <header><b>5</b><span class="te-status partial">Częściowo</span></header>
+            <h3>Poznaj ścieżki edukacyjne</h3>
+            <small>Explore education</small>
+            <p>Technika, BS I i II stopnia, KKZ, BCU, a docelowo także uczelnie i dalsze etapy nauki.</p>
+          </article>
+          <article class="te-role">
+            <header><b>6</b><span class="te-status planned">Planowane</span></header>
+            <h3>Doświadcz zawodu</h3>
+            <small>Experience professions</small>
+            <p>Warsztaty, dni otwarte, wizyty, VR i funkcja „Spróbuj tego zawodu” z aktualnymi wydarzeniami.</p>
+          </article>
+          <article class="te-role">
+            <header><b>7</b><span class="te-status partial">Częściowo</span></header>
+            <h3>Połącz ekosystem</h3>
+            <small>Connect schools, VET and employers</small>
+            <p>Szkoły podstawowe → ponadpodstawowe → uczelnie → pracodawcy → instytucje rynku pracy. Zgodnie z logiką COVE.</p>
+          </article>
+          <article class="te-role">
+            <header><b>8</b><span class="te-status planned">Planowane</span></header>
+            <h3>Wesprzyj doradcę zawodowego</h3>
+            <small>Support career counsellors</small>
+            <p>Scenariusze zajęć, mapy branż, ćwiczenia, zapisywanie postępów i panel klasy. Narzędzie pracy, nie zastępstwo.</p>
+          </article>
+          <article class="te-role">
+            <header><b>9</b><span class="te-status planned">Planowane</span></header>
+            <h3>Pomóż podjąć decyzję</h3>
+            <small>Support decision-making</small>
+            <p>Zamiast „powinieneś zostać mechanikiem”: 2–4 branże, kilka zawodów, kilka szkół i plan działań.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- DORADCA -->
+      <section class="te-section" id="doradca" aria-labelledby="doradca-title">
+        <div class="te-heading">
+          <p class="te-kicker">Dla doradców zawodowych</p>
+          <h2 id="doradca-title">Narzędzie pracy doradcy, nie jego zastępstwo</h2>
+        </div>
+        <div class="te-split">
+          <div>
+            <ul class="te-bullets te-bullets-lg">
+              <li>Gotowe scenariusze zajęć i materiały do pracy w klasie.</li>
+              <li>Mapy branż i ćwiczenia.</li>
+              <li>Profile uczniów i zapisywanie postępów.</li>
+              <li>Propozycje kolejnych działań dla klasy i dla ucznia.</li>
+            </ul>
+          </div>
+          <figure class="te-mock" aria-label="Makieta panelu klasy z przykładowymi danymi">
+            <figcaption>Panel klasy · <em>makieta, dane przykładowe</em></figcaption>
+            <div class="te-mock-row"><span>Poznanie siebie</span><i style="--w:92%"></i><b>22/24</b></div>
+            <div class="te-mock-row"><span>Branże</span><i style="--w:75%"></i><b>18/24</b></div>
+            <div class="te-mock-row"><span>Zawody</span><i style="--w:54%"></i><b>13/24</b></div>
+            <div class="te-mock-row"><span>Szkoły</span><i style="--w:33%"></i><b>8/24</b></div>
+            <div class="te-mock-row"><span>Doświadczenie</span><i style="--w:17%"></i><b>4/24</b></div>
+            <div class="te-mock-row"><span>Decyzja</span><i style="--w:8%"></i><b>2/24</b></div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- DECYZJA -->
+      <section class="te-section" id="decyzja" aria-labelledby="decyzja-title">
+        <div class="te-heading">
+          <p class="te-kicker">Podejście do decyzji</p>
+          <h2 id="decyzja-title">Inspirujemy, nie rozstrzygamy za ucznia</h2>
+        </div>
+        <div class="te-compare">
+          <div class="te-say te-say-no">
+            <span>Tak nie mówimy</span>
+            <p>„Powinieneś zostać mechanikiem.”</p>
+          </div>
+          <div class="te-say te-say-yes">
+            <span>Tak mówimy</span>
+            <p>„Te obszary mogą odpowiadać Twoim zainteresowaniom i preferencjom. Zobacz, jak wyglądają w praktyce i sprawdź, czy są dla Ciebie interesujące.”</p>
+          </div>
+        </div>
+        <ul class="te-result" aria-label="Rezultat procesu">
+          <li><strong>2–4</strong><span>interesujące branże</span></li>
+          <li><strong>kilka</strong><span>potencjalnych zawodów</span></li>
+          <li><strong>kilka</strong><span>możliwych szkół</span></li>
+          <li><strong>konkretne</strong><span>działania do wykonania</span></li>
+        </ul>
+      </section>
+
+      <!-- ETAPY -->
+      <section class="te-section" id="etapy" aria-labelledby="etapy-title">
+        <div class="te-heading">
+          <p class="te-kicker">Rozwój</p>
+          <h2 id="etapy-title">Sześć etapów, od mapy do miejskiego ekosystemu talentów</h2>
+        </div>
+        <ol class="te-roadmap">
+          <li class="is-current">
+            <span class="te-stage">Etap 1 · trwa</span>
+            <h3>Mapa branż i integracja zasobów</h3>
+            <p>Działający prototyp: branże, profile, szkoły i ścieżki. Dalej: opisy branż dla uczniów i linki do istniejących narzędzi.</p>
+          </li>
+          <li>
+            <span class="te-stage">Etap 2</span>
+            <h3>Profile uczniów i ścieżki eksploracji</h3>
+            <p>Profil zainteresowań i prowadzenie ucznia przez kolejne kroki.</p>
+          </li>
+          <li>
+            <span class="te-stage">Etap 3</span>
+            <h3>Baza lokalnych wydarzeń</h3>
+            <p>Warsztaty, dni otwarte i możliwości poznawania zawodów w praktyce.</p>
+          </li>
+          <li>
+            <span class="te-stage">Etap 4</span>
+            <h3>Panel doradcy zawodowego</h3>
+            <p>Scenariusze, materiały, zapis postępów i widok klasy.</p>
+          </li>
+          <li>
+            <span class="te-stage">Etap 5</span>
+            <h3>Talent Labs, stanowiska mobilne, VR</h3>
+            <p>Praktyczne doświadczanie zawodów poza ekranem.</p>
+          </li>
+          <li>
+            <span class="te-stage">Etap 6</span>
+            <h3>Własne, zwalidowane narzędzia diagnostyczne</h3>
+            <p>We współpracy z uczelnią, dopiero gdy istniejące zasoby przestaną wystarczać.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- DOMKNIECIE -->
+      <section class="te-final" aria-labelledby="final-title">
+        <h2 id="final-title">Cel długoterminowy</h2>
+        <p>
+          Wrocław Talent Explorer ma stać się miejskim ekosystemem eksploracji talentów, edukacji i rynku pracy,
+          a nie tylko stroną z informacjami o zawodach.
+        </p>
+        <a class="path-cta" href="./">Przejdź do mapy szkół i profili</a>
+      </section>
+
+      <p class="te-disclaimer">
+        Strona przedstawia koncepcję i prototyp. Dane o szkołach i profilach mają charakter orientacyjny.
+        Przed decyzją rekrutacyjną sprawdź aktualną ofertę szkoły i oficjalne źródła.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-logos" aria-label="Logotypy partnerów i finansowania">
+        <a class="logo-slot footer-logo" href="https://win4smes.eu/" target="_blank" rel="noopener" aria-label="WIN4SMEs">
+          <img src="assets/win4smes-tight.png" alt="WIN4SMEs">
+        </a>
+        <a class="logo-slot footer-logo" href="https://covepolska.pl/" target="_blank" rel="noopener" aria-label="COVE Polska">
+          <img src="assets/cove-polska-tight.png" alt="COVE Polska">
+        </a>
+        <a class="logo-slot footer-logo" href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" target="_blank" rel="noopener" aria-label="Dofinansowane przez Unię Europejską">
+          <img src="assets/eu-cofunded-pl-tight.png" alt="Dofinansowane przez Unię Europejską">
+        </a>
+        <a class="logo-slot footer-logo" href="https://www.wroclaw.pl/" target="_blank" rel="noopener" aria-label="Wrocław Miasto Spotkań">
+          <img src="assets/wroclaw-miasto-spotkan-tight.png" alt="Wrocław Miasto Spotkań">
+        </a>
+      </div>
+    </footer>
+
+    <script src="talent-explorer.js" type="module"></script>
+  </body>
+</html>
