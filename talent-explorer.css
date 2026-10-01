@@ -766,6 +766,74 @@
   line-height: 1.5;
 }
 
+/* ---------- Resources ---------- */
+.te-res-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.te-res {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--white);
+  padding: 18px;
+}
+
+.te-res-tag {
+  width: fit-content;
+  border-radius: 999px;
+  background: var(--amber-soft);
+  padding: 3px 10px;
+  color: #8a5a00;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.te-res h3 {
+  margin: 4px 0 0;
+  color: var(--navy);
+  font-size: 19px;
+}
+
+.te-res small {
+  color: var(--muted);
+}
+
+.te-res p {
+  margin: 4px 0 6px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.te-res-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.te-res-links a {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--navy);
+  border-radius: 8px;
+  padding: 0 12px;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.te-res-links a:hover,
+.te-res-links a:focus-visible {
+  background: var(--navy);
+  color: var(--white);
+}
+
 /* ---------- Counsellor mock ---------- */
 .te-mock {
   margin: 0;
@@ -990,6 +1058,7 @@
 }
 
 @media (max-width: 720px) {
+  .te-res-grid,
   .te-roles,
   .te-roadmap,
   .te-compare,
